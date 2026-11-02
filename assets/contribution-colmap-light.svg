@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="124" viewBox="0 0 390 124" role="img" aria-labelledby="title desc">
+<title id="title">COLMAP: 2 verified upstream merged PRs</title>
+<desc id="desc">Bundle-adjustment solver controls; C++ / CLI / Python and CUDA diagnostics. Count derived from verified public PR records.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="16" y="36" fill="#20212b" font-size="27" font-weight="600">COLMAP</text>
+<text x="374" y="34" fill="#6846bd" font-size="13" font-weight="500" text-anchor="end">2 merged PRs</text>
+<text x="16" y="72" fill="#626574" font-size="16" font-weight="400">Bundle-adjustment solver controls</text>
+<text x="16" y="97" fill="#626574" font-size="15" font-weight="400">C++ / CLI / Python and CUDA diagnostics</text>
+<path d="M16 119h358" fill="none" stroke="#dadce5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

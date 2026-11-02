@@ -3,12 +3,15 @@
 import argparse
 import concurrent.futures
 import importlib.util
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
 import subprocess
 import sys
 import urllib.request
+import urllib.error
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('sync', ROOT / 'scripts/update_contributions.py')
@@ -21,6 +24,49 @@ def require(condition, message):
         raise AssertionError(message)
 
 
+class ProfileHTML(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.images, self.references, self.links = [], [], []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        require(tag not in {'script', 'iframe', 'object', 'embed', 'style'}, f'Unsafe HTML tag: {tag}')
+        require(not any(k.startswith('on') for k in attrs), 'Inline event handler')
+        if tag == 'img':
+            require(bool(attrs.get('alt')), 'Missing image alternative text')
+            self.images.append(attrs)
+        if tag == 'a' and attrs.get('href'):
+            self.links.append(attrs['href'])
+        for attr in ('src', 'srcset'):
+            if attr in attrs:
+                require(attrs[attr].startswith('assets/'), 'Profile images must be repository-local')
+                self.references.append(attrs[attr])
+
+
+def validate_assets(readme, expected):
+    parser = ProfileHTML()
+    parser.feed(readme)
+    require(len(parser.images) == 8, 'Expected banner, four contribution cards, and three project schematics')
+    require('Jiangtao Wang' in parser.images[0]['alt'], 'Banner identity missing')
+    for reference in parser.references:
+        require(reference in expected, f'Unknown or stale visual resource: {reference}')
+        require((ROOT / reference).is_file(), f'Missing visual resource: {reference}')
+    for name, content in expected.items():
+        if not name.startswith('assets/'):
+            continue
+        tree = ET.fromstring(content)
+        require(tree.tag == '{http://www.w3.org/2000/svg}svg', 'Not an SVG')
+        require(tree.find('{http://www.w3.org/2000/svg}title') is not None, 'SVG title missing')
+        require(tree.find('{http://www.w3.org/2000/svg}desc') is not None, 'SVG description missing')
+        for element in tree.iter():
+            require(element.tag.split('}')[-1] not in {'script', 'foreignObject', 'image', 'animate'}, 'External or active SVG content')
+            for attr, value in element.attrib.items():
+                require(not attr.startswith('on'), 'SVG event handler')
+                require('https://' not in value and 'http://' not in value, 'External SVG dependency')
+    return len(parser.references)
+
+
 def remote_pr(pr):
     result = sync.api(f'repos/{pr["repository"]}/pulls/{pr["number"]}')
     require(result['user']['login'] == pr['author'], f'Author changed: {pr["url"]}')
@@ -28,10 +74,7 @@ def remote_pr(pr):
     require(result['html_url'] == pr['url'], f'Canonical URL mismatch: {pr["url"]}')
     require(result['base']['repo']['full_name'] == pr['repository'], 'Base repository mismatch')
     require(not result['base']['repo']['private'], 'Non-public PR')
-    request = urllib.request.Request(pr['url'], method='HEAD', headers={'User-Agent': 'ProfileEvidenceValidator/1.0'})
-    with urllib.request.urlopen(request, timeout=35) as response:
-        require(response.status == 200, f'PR URL HTTP {response.status}')
-    return pr['url']
+    return remote_url(pr['url'])
 
 
 def remote_url(url):
@@ -39,11 +82,15 @@ def remote_url(url):
         sync.api(url.removeprefix('https://api.github.com/'))
         return url
     request = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'ProfileEvidenceValidator/1.0'})
-    try:
-        with urllib.request.urlopen(request, timeout=25) as response:
-            require(response.status == 200, f'Broken external link: {url}')
-    except Exception as error:
-        raise AssertionError(f'External link check inconclusive: {url}: {error}') from error
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(request, timeout=25) as response:
+                require(response.status == 200, f'Broken external link: {url}')
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as error:
+            permanent_http = isinstance(error, urllib.error.HTTPError) and 400 <= error.code < 500 and error.code != 429
+            if attempt or permanent_http:
+                raise AssertionError(f'External link check inconclusive: {url}: {error}') from error
     return url
 
 
@@ -73,11 +120,11 @@ def main():
     for name, value in output.items():
         require((ROOT / name).read_bytes() == value.encode(), f'Stale generated file: {name}')
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
-    require(readme.count('\n# ') == 0 and readme.startswith('# Jiangtao Wang\n'), 'Invalid main heading')
+    require('alt="Jiangtao Wang — Robotics Simulation | Physical AI | Sim2Real"' in readme, 'Missing profile banner')
     sections = re.findall(r'^## (.+)$', readme, re.M)
-    require(sections == ['Open Source Contributions', 'Selected Projects', 'Technical Stack', 'Links'], 'Section order')
+    require(sections == ['Open Source Contributions', 'Selected Engineering Projects', 'Technical Stack', 'Links'], 'Section order')
     require('self-reported' in readme and 'not been independently verified' in readme, 'Missing project qualification')
-    require('![' not in readme and '<img' not in readme.lower() and '<script' not in readme.lower(), 'External resource embed')
+    asset_references = validate_assets(readme, output)
     for value in ('4.41×', '34.4% → 73.4%', '86.7%', '60%', '1,000', 'Lambert + GGX'):
         require(value in readme, f'Owner-provided project detail missing: {value}')
     # Scan repository sources only. Do not read .git, ignored local evidence, or external private files.
@@ -94,7 +141,9 @@ def main():
     links = set()
     for name in ('README.md', 'CONTRIBUTIONS.md', 'MAINTENANCE.md'):
         text = (ROOT / name).read_text(encoding='utf-8')
-        for link in re.findall(r'\]\(([^)]+)\)', text):
+        html = ProfileHTML()
+        html.feed(text)
+        for link in re.findall(r'\]\(([^)]+)\)', text) + html.links:
             if link.startswith('https://'):
                 links.add(link)
             else:
@@ -116,6 +165,8 @@ def main():
               'excluded_bot_authored_matches': len(data['excluded']), 'remote_mode': args.online,
               'checked_urls': sorted(checked), 'external_document_urls': len(links),
               'source_files_scanned': len(sources), 'secrets_or_internal_addresses_detected': False}
+    result['local_visual_resources'] = sum(name.startswith('assets/') for name in output)
+    result['checked_visual_references'] = asset_references
     sync.write_changed(ROOT / '.local/validation.json', sync.dumps(result))
     print(json.dumps({k: v for k, v in result.items() if k != 'checked_urls'}, indent=2))
 

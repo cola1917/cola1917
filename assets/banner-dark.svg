@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="212" viewBox="0 0 1000 212" role="img" aria-labelledby="title desc">
+<title id="title">Jiangtao Wang — Robotics Simulation, Physical AI, Sim2Real</title>
+<desc id="desc">Personal identity. Technical linework is schematic, not experimental imagery.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="12" y="80" fill="#eef0f7" font-size="68" font-weight="400" font-family="Georgia, Times New Roman, serif">Jiangtao Wang</text>
+<text x="14" y="128" fill="#eef0f7" font-size="26" font-weight="500">Robotics simulation &amp; learning</text>
+<text x="14" y="175" fill="#bea4ff" font-size="21" font-weight="400">Physical AI / Sim2Real</text>
+<g transform="translate(724 35) scale(1.1)"><path d="M12 120 C25 16, 90 10, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C38 28, 97 22, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C51 40, 104 34, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C64 52, 111 46, 171 29" fill="none" stroke="#bea4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C77 64, 118 58, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C90 76, 125 70, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C103 88, 132 82, 171 29" fill="none" stroke="#303642" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="120" r="4" fill="#bea4ff"/><circle cx="171" cy="29" r="8" fill="#0d1117" stroke="#bea4ff" stroke-width="2"/></g>
+<text x="14" y="202" fill="#a8adbd" font-size="17" font-weight="400">Python / C++   ·   MuJoCo / Newton / Warp</text>
+</g>
+</svg>

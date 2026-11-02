@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="124" viewBox="0 0 390 124" role="img" aria-labelledby="title desc">
+<title id="title">Newton: 6 verified upstream merged PRs</title>
+<desc id="desc">IK, autodiff and cloth assembly; Articulation trees and solver correctness. Count derived from verified public PR records.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="16" y="36" fill="#eef0f7" font-size="27" font-weight="600">Newton</text>
+<text x="374" y="34" fill="#bea4ff" font-size="13" font-weight="500" text-anchor="end">6 merged PRs</text>
+<text x="16" y="72" fill="#a8adbd" font-size="16" font-weight="400">IK, autodiff and cloth assembly</text>
+<text x="16" y="97" fill="#a8adbd" font-size="15" font-weight="400">Articulation trees and solver correctness</text>
+<path d="M16 119h358" fill="none" stroke="#303642" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -4,9 +4,11 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import sys
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
 spec = importlib.util.spec_from_file_location('sync', ROOT / 'scripts/update_contributions.py')
 sync = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(sync)

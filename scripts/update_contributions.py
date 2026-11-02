@@ -17,6 +17,9 @@ import re
 import subprocess
 import sys
 import tempfile
+from urllib.parse import quote
+
+from profile_art import CARDS, build_assets, eligible_groups, picture
 
 ROOT = Path(__file__).resolve().parents[1]
 UPSTREAM = {
@@ -183,20 +186,34 @@ def md(text):
 
 
 def selected_markdown(data, editorial):
-    records = {f'{p["repository"]}#{p["number"]}': p for p in data['pull_requests']}
-    lines = []
-    count = sum(p['repository_category'] == 'verified_upstream' for p in records.values())
-    lines.append(f'**{count} merged upstream PRs** across Newton, MuJoCo Warp, PyPose, and COLMAP. Selected work:')
-    lines.append('')
-    for group in editorial['selected']:
-        eligible = [records[k] for k in group['prs'] if k in records and
-                    records[k]['repository_category'] == 'verified_upstream' and
-                    records[k]['evidence']['summary_review_status'] == 'diff_and_discussion_reviewed']
-        # Do not reuse curated prose if a referenced PR no longer passes verification.
-        if len(eligible) != len(group['prs']):
-            continue
-        links = ' · '.join(f'[#{p["number"]}]({p["url"]})' for p in eligible)
-        lines.append(f'- **[{group["label"]}]({eligible[0]["repository_url"]})** — {group["summary"]} {links}')
+    groups = eligible_groups(data, editorial)
+    count = sum(p['repository_category'] == 'verified_upstream' for p in data['pull_requests'])
+    lines = [f'**{count} merged upstream PRs** across Newton, MuJoCo Warp, PyPose, and COLMAP.', '']
+    for start in range(0, len(groups), 2):
+        lines.append('<p align="center">')
+        for group, records, repo_count in groups[start:start+2]:
+            query = quote(f'is:pr is:merged author:{data["username"]} repo:{records[0]["repository"]}')
+            slug = CARDS[group['label']][0]
+            lines += [f'<a href="https://github.com/pulls?q={query}">',
+                      picture(f'contribution-{slug}',
+                              f'{group["label"]}: {repo_count} merged upstream PR' +
+                              ('s' if repo_count != 1 else '') + f'. {group["summary"]}', width='390'),
+                      '</a>']
+        lines.extend(['</p>', ''])
+    lines.extend(['**Selected PR evidence**', ''])
+    evidence_labels = {
+        'newton-physics/newton#4871': 'IK correctness',
+        'newton-physics/newton#4874': 'Autodiff L-BFGS',
+        'newton-physics/newton#4942': 'Cloth assembly',
+        'google-deepmind/mujoco_warp#1853': 'Contact reductions',
+        'pypose/pypose#439': 'Broadcast views',
+        'colmap/colmap#4892': 'BA controls',
+        'colmap/colmap#4903': 'Driver diagnostics',
+    }
+    for group, records, _ in groups:
+        links = ' · '.join(f'[{evidence_labels.get(p["repository"]+"#"+str(p["number"]), "PR")} '
+                           f'#{p["number"]}]({p["url"]})' for p in records)
+        lines.append(f'- **{group["label"]}:** {links}')
     lines.extend(['', f'[View All Merged PRs](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3A{data["username"]}) · '
                   '[Verified contribution ledger](CONTRIBUTIONS.md)', '',
                   '*Upstream merges only above; personal repositories and fork merges are listed separately in the ledger.*'])
@@ -256,11 +273,14 @@ def generate(root, data, editorial):
     # Validate both documents before writing anything. Preserve all bytes outside markers.
     readme = (root / 'README.md').read_bytes().decode('utf-8')
     ledger = (root / 'CONTRIBUTIONS.md').read_bytes().decode('utf-8')
-    return {
+    output = {
         'README.md': replace_region(readme, 'SELECTED_CONTRIBUTIONS', selected_markdown(data, editorial)),
         'CONTRIBUTIONS.md': replace_region(ledger, 'MERGED_PRS', ledger_markdown(data)),
         'data/merged_prs.json': dumps(data),
     }
+    # Cards and counts are part of the same deterministic generation/check pass.
+    output.update(build_assets(data, editorial))
+    return output
 
 
 def main():

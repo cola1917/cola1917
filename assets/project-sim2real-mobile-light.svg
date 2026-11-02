@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="558" viewBox="0 0 600 558" role="img" aria-labelledby="title desc">
+<title id="title">Sim2Real — method schematic</title>
+<desc id="desc">Conceptual workflow: Plan → Collect → Learn &amp; evaluate. This is not an experiment screenshot or a measured performance plot.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="18" y="27" fill="#626574" font-size="17" font-weight="400">Method schematic</text>
+<g transform="translate(22 46) scale(0.88)"><path d="M12 120 C25 16, 90 10, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C38 28, 97 22, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C51 40, 104 34, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C64 52, 111 46, 171 29" fill="none" stroke="#6846bd" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C77 64, 118 58, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C90 76, 125 70, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 120 C103 88, 132 82, 171 29" fill="none" stroke="#dadce5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="120" r="4" fill="#6846bd"/><circle cx="171" cy="29" r="8" fill="#ffffff" stroke="#6846bd" stroke-width="2"/></g>
+<text x="230" y="94" fill="#20212b" font-size="25" font-weight="600">Plan</text>
+<text x="230" y="131" fill="#626574" font-size="21" font-weight="400">SIMPLE / CuRobo planning</text>
+<path d="M18 199h564" fill="none" stroke="#dadce5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(22 212) scale(0.88)"><rect x="50" y="12" width="113" height="88" rx="3" fill="#ffffff" stroke="#dadce5"/><rect x="36" y="23" width="113" height="88" rx="3" fill="#ffffff" stroke="#dadce5"/><rect x="22" y="34" width="113" height="88" rx="3" fill="#ffffff" stroke="#dadce5"/><path d="M36 53h65m9 0h10" fill="none" stroke="#dadce5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 68h65m9 0h10" fill="none" stroke="#6846bd" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 83h65m9 0h10" fill="none" stroke="#dadce5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 98h65m9 0h10" fill="none" stroke="#dadce5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 134h85" fill="none" stroke="#6846bd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="230" y="260" fill="#20212b" font-size="25" font-weight="600">Collect</text>
+<text x="230" y="297" fill="#626574" font-size="21" font-weight="400">G1 + O6/O7 physical</text>
+<text x="230" y="323" fill="#626574" font-size="21" font-weight="400">demonstrations</text>
+<path d="M18 365h564" fill="none" stroke="#dadce5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(22 378) scale(0.88)"><path d="M39 30a62 62 0 0 1 112 47m0-12v14h-15M131 121A62 62 0 0 1 22 82m0 13V81h14" fill="none" stroke="#6846bd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M65 55l23-15 24 15v40l-24 15-23-15zM65 55l47 40M112 55L65 95M88 40v70" fill="none" stroke="#6846bd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="230" y="426" fill="#20212b" font-size="25" font-weight="600">Learn &amp; evaluate</text>
+<text x="230" y="463" fill="#626574" font-size="21" font-weight="400">GR00T + closed-loop</text>
+<text x="230" y="489" fill="#626574" font-size="21" font-weight="400">Sim2Real</text>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="232" viewBox="0 0 600 232" role="img" aria-labelledby="title desc">
+<title id="title">Jiangtao Wang — Robotics Simulation, Physical AI, Sim2Real</title>
+<desc id="desc">Personal identity. Technical linework is schematic, not experimental imagery.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="12" y="80" fill="#20212b" font-size="54" font-weight="400" font-family="Georgia, Times New Roman, serif">Jiangtao Wang</text>
+<text x="14" y="128" fill="#20212b" font-size="26" font-weight="500">Robotics simulation &amp; learning</text>
+<text x="14" y="175" fill="#6846bd" font-size="21" font-weight="400">Physical AI / Sim2Real</text>
+<text x="14" y="215" fill="#626574" font-size="22" font-weight="400">Python / C++   ·   MuJoCo / Newton / Warp</text>
+</g>
+</svg>
