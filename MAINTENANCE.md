@@ -1,0 +1,54 @@
+# Profile Maintenance
+
+This is the source for `cola1917/cola1917`. The repository must be public and contain a non-empty root `README.md` to appear on the profile. See [GitHub's profile README documentation](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).
+
+## Update locally
+
+Requirements: Python 3.10+ and an authenticated GitHub CLI (`gh`). Both scripts use only Python's standard library. Existing CLI credentials are used internally; neither script extracts or stores a token.
+
+```sh
+python scripts/update_contributions.py --username cola1917
+python scripts/update_contributions.py --offline --check
+python -m unittest discover -s tests -v
+python scripts/validate_profile.py --online
+git diff --check
+git diff
+```
+
+Without `--username`, the script uses the current authenticated account. Explicit usernames must match `data/editorial.json`, preventing accidental replacement of this profile with another author's ledger. To reuse the script for another profile, change the editorial username, remove the old summaries/selection, and edit the manual README.
+
+`--check` makes no writes and exits nonzero if generated output differs. `--offline` renders the saved snapshot without claiming to reverify it remotely. Live runs always recheck the PR detail endpoint; no stale cached merge status is treated as fresh evidence.
+
+## Evidence and editorial boundaries
+
+- `data/merged_prs.json` contains all successfully verified **public** PRs authored by this account, not only the four featured upstream repositories. It records merge timestamps/commits, repository ownership/fork status, file metadata, patch hashes when available, and discussion URLs. Raw private content, raw comment bodies, and binary assets are not exported.
+- Search is paginated and recursively divided into disjoint creation-time windows if it exceeds GitHub's 1,000-result cap. Incomplete or inconsistent search results fail closed. GitHub search indexing can lag; completeness means all matches returned by the authenticated search at collection time.
+- Every record requires matching PR author, a non-null merge time, `merged=true`, the expected public base repository, and a complete changed-file list. Bot-authored search matches are excluded. Personal repositories and fork merges remain separate from upstream acceptance. Only the four explicitly allowlisted canonical repositories receive the `verified_upstream` category; other public collaboration is not automatically called upstream.
+- `data/editorial.json` is the manually reviewed technical layer. Each summary is bound to a reviewed PR head SHA. New PRs get a factual file/change-count summary marked `pending_editorial_review`. Review their diff and discussion before adding a technical summary or featuring them. If a head changes, its old summary is not reused.
+- The README displays only selected, reviewed upstream PRs; the full ledger includes all verified public records. PR validation claims describe the linked public evidence; the upstream simulation suites have not been rerun by this profile's sync or validation scripts.
+- The three selected projects, their scope, and their numerical results were provided by the profile owner. No public repositories or experimental records were identified that establish those exact projects/metrics. They remain explicitly self-reported and have no invented project links.
+
+## Protect manual content
+
+The sync script replaces only these delimited regions:
+
+```text
+<!-- BEGIN AUTO:SELECTED_CONTRIBUTIONS -->
+<!-- END AUTO:SELECTED_CONTRIBUTIONS -->
+<!-- BEGIN AUTO:MERGED_PRS -->
+<!-- END AUTO:MERGED_PRS -->
+```
+
+Do not remove, duplicate, or reverse the markers. Missing/invalid markers abort generation before any complete output is written. Bytes outside each region are preserved, including existing line endings. Outputs are sorted and have no changing run timestamp; unchanged content is not rewritten.
+
+On collection/API failure, the previous complete README, ledger, and data remain intact. Successfully verified public records are saved in ignored `.local/sync_partial.json`, clearly marked incomplete. No unverified PR is promoted to the profile. Reauthenticate or wait for the API quota to recover, then rerun.
+
+## Publishing and automation
+
+Review changes locally before pushing. This tooling never creates a repository, pushes a branch, posts a message, or opens a PR. No GitHub Actions workflow is enabled: the reliable local sync is sufficient for now.
+
+A future Actions job must supply its own GitHub-provided `GH_TOKEN` environment variable; it cannot access this machine's keyring login. Use a read-only collection job (`contents: read`), fixed author `cola1917`, and reviewed artifacts. Any write/PR job should have only the additional permissions it needs. Do not add a personal token to source control.
+
+## Design references
+
+The layout uses GitHub-native headings, short contribution bullets, and direct evidence links. It was informed by the [GitHub documentation](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme) and the [Awesome GitHub Profile README collection](https://github.com/abhisheknaiidu/awesome-github-profile-readme), especially its simple/minimal examples. No template assets or external tracking images are embedded. The confirmed Engineering Notes link is also recorded as the homepage of the owner's public website repository.

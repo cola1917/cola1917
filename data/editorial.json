@@ -1,0 +1,365 @@
+{
+  "username": "cola1917",
+  "summaries": {
+    "cola1917/ad-eval-suite#10": {
+      "reviewed_head_sha": "1768a0e180e08f2bfa1a6c3c373f3c4004079a50",
+      "contribution_type": [
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Added simulation-validation CI with default XOSC checks, opt-in manual esmini smoke execution, report artifacts, and temporary-file ignore rules.",
+      "evidence_files": [
+        ".github/workflows/sim-validation.yml",
+        ".gitignore"
+      ]
+    },
+    "cola1917/ad-eval-suite#11": {
+      "reviewed_head_sha": "0c47c59ebf66ef9394299b10cae71d1a90c81f92",
+      "contribution_type": [
+        "refactor"
+      ],
+      "technical_summary": "Unified evaluation, mining, simulation, and visualization entry points under one CLI; reorganized module boundaries, split configurations, and updated imports/tests/documentation.",
+      "evidence_files": [
+        "README.md",
+        "configs/eval.yaml",
+        "configs/sim.yaml",
+        "failure_mining/__init__.py"
+      ]
+    },
+    "cola1917/ad-eval-suite#4": {
+      "reviewed_head_sha": "aad7e867d320d4a023320194db93e08adae38ca8",
+      "contribution_type": [
+        "test_enhancement"
+      ],
+      "technical_summary": "Added fast/nightly perception CI, deterministic detection/tracking fixtures, golden metrics, and a regression runner.",
+      "evidence_files": [
+        ".github/workflows/ci-fast.yml",
+        ".github/workflows/ci-nightly.yml",
+        "eval/perception/regression_fixture.py",
+        "requirements.txt"
+      ]
+    },
+    "cola1917/ad-eval-suite#5": {
+      "reviewed_head_sha": "cf5e9204e16fd780b681001b4d1eecea036035e4",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added failure-case ranking, serialized scenario snapshots, frame replay, and initial OpenSCENARIO export with unit tests.",
+      "evidence_files": [
+        "failure_mining/__init__.py",
+        "failure_mining/error_aggregation.py",
+        "failure_mining/pipeline.py",
+        "failure_mining/rank_frames.py"
+      ]
+    },
+    "cola1917/ad-eval-suite#6": {
+      "reviewed_head_sha": "5877038829f8bd62d898804cafa6c63b51881793",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added raw nuScenes map geometry loading, viewport queries, lane/drivable-area overlays, snapshot location metadata, and replay export options.",
+      "evidence_files": [
+        "scenario/map_overlay.py",
+        "scenario/snapshot_schema.py",
+        "scripts/run_perception_eval.py",
+        "tests/unit/test_phase2_tools.py"
+      ]
+    },
+    "cola1917/ad-eval-suite#7": {
+      "reviewed_head_sha": "62b963f91ff6f64cecac2033d16b0ef6acfa278f",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Extended replay integration with GIF export options, Pillow-based GIF handling, progress reporting, and export tests; the underlying map loader was introduced separately in #6.",
+      "evidence_files": [
+        "scripts/run_perception_eval.py",
+        "tests/unit/test_phase2_tools.py",
+        "tools/replay_scene.py"
+      ]
+    },
+    "cola1917/ad-eval-suite#8": {
+      "reviewed_head_sha": "0f18035a430de8bc08605cb07e2aee81d56cf3c8",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Propagated map-location metadata into failure-mining snapshots so replay can select the appropriate map.",
+      "evidence_files": [
+        "failure_mining/pipeline.py"
+      ]
+    },
+    "cola1917/ad-eval-suite#9": {
+      "reviewed_head_sha": "0c22ba0d7f19fa872808e9f352d2fe96ac6c3f1e",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added OpenSCENARIO XML/semantic and optional XSD validation plus a batch esmini smoke runner with timeout/dry-run reports and unit tests.",
+      "evidence_files": [
+        "scripts/run_esmini_smoke.py",
+        "scripts/validate_xosc.py",
+        "simulator_export/__init__.py",
+        "simulator_export/validation.py"
+      ]
+    },
+    "colmap/colmap#4892": {
+      "reviewed_head_sha": "d711a023af738a7c9262c733293ba575b853a768",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Exposed five existing Ceres solver-selection image-count thresholds for local and global incremental bundle adjustment through C++ pipeline options, Mapper CLI/project settings, and PyCOLMAP. Preserved defaults and added propagation, round-trip, and reconstruction tests; no GPU performance claim.",
+      "evidence_files": [
+        "doc/faq.rst",
+        "src/colmap/controllers/incremental_pipeline.cc",
+        "src/colmap/controllers/incremental_pipeline.h",
+        "src/colmap/controllers/incremental_pipeline_test.cc"
+      ]
+    },
+    "colmap/colmap#4903": {
+      "reviewed_head_sha": "3a70d3d78a63237d825dcc6a36518e3f696e0bf0",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Added actionable insufficient-driver diagnostics and a common CUDA/HIP error formatter while preserving the zero-device return used by CPU-fallback callers. Added error-code/description tests; does not claim to fix Windows CLI exception termination or verify HIP execution.",
+      "evidence_files": [
+        "src/colmap/util/CMakeLists.txt",
+        "src/colmap/util/cuda.cc",
+        "src/colmap/util/cudacc.cc",
+        "src/colmap/util/cudacc.h"
+      ]
+    },
+    "eric-heiden/newton#17": {
+      "reviewed_head_sha": "9c5f244dace21d08be7585666780972e7ee2c6b4",
+      "contribution_type": [
+        "test_enhancement"
+      ],
+      "technical_summary": "Added MJCF camera-import tests comparing inherited/physical/pixel intrinsics and moving-body mount transforms against native MuJoCo. Test-only merge into eric-heiden/newton, a fork; not a merged contribution to newton-physics/newton.",
+      "evidence_files": [
+        "newton/tests/test_import_mjcf.py"
+      ]
+    },
+    "ForgeAI-Robotics/fq-assets#1": {
+      "reviewed_head_sha": "1666913db439149ab4e655938091325d50d64d77",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added a simulation-scene asset package with assembly manifests, MuJoCo/USD assets, provenance, previews, validation evidence, and catalog/checksum updates. Public merge verified; asset physics and approval process were not independently rerun.",
+      "evidence_files": [
+        "assets.lock.json",
+        "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/SOURCE_NOTICE.md",
+        "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/assembly.json",
+        "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/asset.json"
+      ]
+    },
+    "google-deepmind/mujoco_warp#1853": {
+      "reviewed_head_sha": "b02b168851bdb87b328f259e09d1b82c4d9628ed",
+      "contribution_type": [
+        "algorithm_correctness_fix",
+        "performance_preservation"
+      ],
+      "technical_summary": "Kept contact direction attached to contact IDs through mindist/maxforce reduction sorting by complement-encoding negative directions. Removed the separate direction buffer while retaining the single-int GPU sort; regressions compare native MuJoCo across heterogeneous worlds and CPU/CUDA graph replay. Public PR measurements describe removal of a regression, not a general speedup.",
+      "evidence_files": [
+        "mujoco_warp/_src/sensor.py",
+        "mujoco_warp/_src/sensor_test.py"
+      ]
+    },
+    "newton-physics/newton#4871": {
+      "reviewed_head_sha": "1ee59d042614a2c061a7de10ec939e2496f87d6c",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Corrected analytic IK forward-kinematics and Jacobian indexing when joint and body indices differ. Follow articulation-tree ancestors, seed external root poses, and reject unsupported objective links or multiply articulated bodies; loop-closure constraints are not enforced.",
+      "evidence_files": [
+        "newton/_src/sim/ik/ik_common.py",
+        "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+        "newton/_src/sim/ik/ik_lm_optimizer.py",
+        "newton/_src/sim/ik/ik_objectives.py"
+      ]
+    },
+    "newton-physics/newton#4874": {
+      "reviewed_head_sha": "e7cbf42c9c481a52a4771d22b7cd2e4833f1ae9f",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Gave L-BFGS candidate residuals independent gradient storage so Warp tape.zero() cannot erase line-search costs and accept an increasing step. Added a CPU/CUDA regression through public IKSolver behavior.",
+      "evidence_files": [
+        "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+        "newton/tests/test_ik_lbfgs.py"
+      ]
+    },
+    "newton-physics/newton#4890": {
+      "reviewed_head_sha": "63d7525054ea917fe3cc46f1e15b15cdca817868",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Restored runtime shape-color updates in the single-model RTX path through per-instance USD display-color readers. Kept built-instance mappings stable across viewer repacking and used a device-side change flag to avoid full color readback on unchanged frames, without rebuilding geometry.",
+      "evidence_files": [
+        "newton/_src/viewer/kernels.py",
+        "newton/_src/viewer/viewer_rtx.py",
+        "newton/_src/viewer/viewer_viser.py",
+        "newton/_src/viewer/viewer_viser_kernels.py"
+      ]
+    },
+    "newton-physics/newton#4894": {
+      "reviewed_head_sha": "42945282dab472f17030137150b6faeba595f053",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Restored runtime shape-opacity updates in the single-model RTX viewer using per-instance opacity/IOR primvars and stable instance mappings. Preserved explicit fractional-opacity settings, reused device-side change detection, and added rendered-pixel regressions.",
+      "evidence_files": [
+        "newton/_src/viewer/viewer_rtx.py",
+        "newton/tests/test_viewer_rtx.py"
+      ]
+    },
+    "newton-physics/newton#4905": {
+      "reviewed_head_sha": "95988dbbca570c12b6d28792ef357ba424e573c2",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Rejected NaN and infinite contact-material values on colliding shapes during ModelBuilder.finalize(), with array/shape diagnostics. Covered direct, imported USD, and replicated inputs while preserving visual-only exemptions and validation opt-outs; this is not an importer-wide audit.",
+      "evidence_files": [
+        "newton/_src/sim/builder.py",
+        "newton/tests/steel/test_contacts.py",
+        "newton/tests/test_import_usd.py",
+        "newton/tests/test_model.py"
+      ]
+    },
+    "newton-physics/newton#4942": {
+      "reviewed_head_sha": "c0e0ca6b0171aa5d33915f5e96da73d7407938de",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Prevented silent truncation of high-valence Style3D projective-dynamics matrix connections. Retry overflowed 32-wide assembly with topology-derived capacity and reject incomplete builders; regressions compare entries against dense assembly, symmetry, and translation-nullspace checks.",
+      "evidence_files": [
+        "newton/_src/solvers/style3d/builder.py",
+        "newton/_src/solvers/style3d/solver_style3d.py",
+        "newton/tests/test_solver_style3d.py"
+      ]
+    },
+    "pypose/pypose#439": {
+      "reviewed_head_sha": "87025f242d11522b0dc5322d275ebeea89d164b6",
+      "contribution_type": [
+        "performance_optimization",
+        "bug_fix"
+      ],
+      "technical_summary": "Preserved expanded views instead of flattening and copying broadcast Lie-group inputs across SO3, SE3, RxSO3, and Sim3. Made Act outputs contiguous for downstream view compatibility; regressions cover non-contiguous/empty inputs and forward/backward equivalence. PR-reported allocation measurements support input-copy removal, not resolution of the original full bundle-adjustment OOM.",
+      "evidence_files": [
+        "pypose/lietensor/lietensor.py",
+        "pypose/lietensor/operation.py",
+        "tests/lietensor/test_broadcast_inputs.py"
+      ]
+    },
+    "yipingho/FIT5120_TM11#1": {
+      "reviewed_head_sha": "400effb0fab4d092839b068f1f74a47a05aa0852",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added PostgreSQL catalog models, raw-to-seed ETL, configurable nutrition rules, seed loading, consistency SQL, and anomaly reporting with generated seed/staging artifacts.",
+      "evidence_files": [
+        "DATA_DICTIONARY.md",
+        "nutri-health-api/README.md",
+        "nutri-health-api/app/database.py",
+        "nutri-health-api/app/etl/__init__.py"
+      ]
+    },
+    "zwan0616/FIT5120_TM11#27": {
+      "reviewed_head_sha": "4caafc809f87ec86a1b22e581a3f6e08828d1126",
+      "contribution_type": [
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Organized CI into white-box, API smoke, and API regression jobs, with coverage/JUnit artifacts and consolidated Markdown reports.",
+      "evidence_files": [
+        ".github/workflows/test-flow.yml",
+        "tests/README.md",
+        "tests/api-deploy/README.md",
+        "tests/api-deploy/scripts/api_regression_test.sh"
+      ]
+    },
+    "zwan0616/FIT5120_TM11#30": {
+      "reviewed_head_sha": "0b2c2690ecae10076ac4a942095d88ca181ce0f3",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added a seeded daily-challenge database model, selection/completion API routes, startup initialization, and white-box/integration tests.",
+      "evidence_files": [
+        "DATA_DICTIONARY.md",
+        "nutri-health-api/README.md",
+        "nutri-health-api/app/etl/sql/check_seed_counts.sql",
+        "nutri-health-api/app/main.py"
+      ]
+    },
+    "zwan0616/FIT5120_TM11#31": {
+      "reviewed_head_sha": "2c10c7eeb246e348306b640abf6d0d16db499247",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Removed the pytest-asyncio dependency from daily-challenge white-box tests using asyncio.run and aligned scan-recognition fixtures with the current contract.",
+      "evidence_files": [
+        "tests/whitebox/test_daily_challenge_router.py",
+        "tests/whitebox/test_scan_router.py"
+      ]
+    },
+    "zwan0616/FIT5120_TM11#35": {
+      "reviewed_head_sha": "0a33ec508da07e8cd41593d78dfd2caf7363e7f8",
+      "contribution_type": [
+        "content_update"
+      ],
+      "technical_summary": "Revised user-facing feedback strings in daily-challenge seed data.",
+      "evidence_files": []
+    },
+    "zwan0616/FIT5120_TM11#41": {
+      "reviewed_head_sha": "a13b48b2b849e479d1b4679c17fe67bda18e9780",
+      "contribution_type": [
+        "test_enhancement",
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Expanded challenge-status and rule-based backend tests, migrated API smoke checks to pytest, added integration metrics/retry support and mock-AI controls, and revised report/coverage configuration.",
+      "evidence_files": [
+        ".github/workflows/test-flow.yml",
+        "nutri-health-api/app/routers/scan.py",
+        "nutri-health-api/app/services/gemini.py",
+        "tests/api-deploy/README.md"
+      ]
+    },
+    "zwan0616/FIT5120_TM11#51": {
+      "reviewed_head_sha": "f03466684a8f3784774aabd44fe2de32f99b2a59",
+      "contribution_type": [
+        "documentation"
+      ],
+      "technical_summary": "Updated pair-programming documentation; this is a documentation contribution rather than an algorithm or simulation change.",
+      "evidence_files": [
+        "PAIR_PROGRAMMING.md"
+      ]
+    }
+  },
+  "selected": [
+    {
+      "label": "Newton",
+      "prs": [
+        "newton-physics/newton#4871",
+        "newton-physics/newton#4874",
+        "newton-physics/newton#4942"
+      ],
+      "summary": "Corrected IK tree/body indexing and autodiff L-BFGS residual ownership; repaired high-valence cloth matrix assembly."
+    },
+    {
+      "label": "MuJoCo Warp",
+      "prs": [
+        "google-deepmind/mujoco_warp#1853"
+      ],
+      "summary": "Fixed signed contact-sensor reductions with complement-encoded IDs, preserving the single-int GPU sort."
+    },
+    {
+      "label": "PyPose",
+      "prs": [
+        "pypose/pypose#439"
+      ],
+      "summary": "Removed expanded-input copies in Lie-group broadcasting while preserving gradient behavior and contiguous Act outputs."
+    },
+    {
+      "label": "COLMAP",
+      "prs": [
+        "colmap/colmap#4892",
+        "colmap/colmap#4903"
+      ],
+      "summary": "Exposed incremental bundle-adjustment solver thresholds in C++ / CLI / Python and improved CUDA driver diagnostics."
+    }
+  ]
+}

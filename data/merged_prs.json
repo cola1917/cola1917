@@ -1,0 +1,3170 @@
+{
+  "schema_version": 1,
+  "username": "cola1917",
+  "collection": {
+    "complete": true,
+    "search_matches": 31,
+    "verified_public_prs": 27,
+    "non_public_matches_omitted": 0,
+    "method": "REST search, paginated/partitioned; PR author, merge, public base, and files checked"
+  },
+  "pull_requests": [
+    {
+      "repository": "ForgeAI-Robotics/fq-assets",
+      "repository_url": "https://github.com/ForgeAI-Robotics/fq-assets",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Add reviewed asset fq:scenes/room_table_can_candidate",
+      "number": 1,
+      "url": "https://github.com/ForgeAI-Robotics/fq-assets/pull/1",
+      "author": "cola1917",
+      "created_at": "2026-11-01T00:25:42Z",
+      "merged_at": "2026-11-01T00:27:36Z",
+      "head_sha": "1666913db439149ab4e655938091325d50d64d77",
+      "merge_commit_sha": "3b4d05fbbf2eb62f227bd0dbd983402d6e81448c",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added a simulation-scene asset package with assembly manifests, MuJoCo/USD assets, provenance, previews, validation evidence, and catalog/checksum updates. Public merge verified; asset physics and approval process were not independently rerun.",
+      "files": [
+        {
+          "filename": "assets.lock.json",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "sha": "07ff1a8a189d458e8e9ecb8aefad85803e663bdc",
+          "patch_sha256": "acb974a945cfa64ef61bbd5984440c0c11e5ab9e268064cc2eb4b6e7fe9807d6"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/SOURCE_NOTICE.md",
+          "status": "added",
+          "additions": 63,
+          "deletions": 0,
+          "sha": "94af24c1daf998e9564b2c73cea29096ca4ae010",
+          "patch_sha256": "5caf8cfb168935386e38452d5f76a2fa5f7f335618e91825cbd1bb9bf147c4e9"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/assembly.json",
+          "status": "added",
+          "additions": 56,
+          "deletions": 0,
+          "sha": "6691f97cd63a4b2ec275d9905702d836fefa0a7a",
+          "patch_sha256": "991a2b3f37dd605a1322f519cbb04d5af4c2cb77b78e6ca96ac258d9751ea282"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/asset.json",
+          "status": "added",
+          "additions": 84,
+          "deletions": 0,
+          "sha": "70b537cf7c33fb76d861d0ea420565b84437960a",
+          "patch_sha256": "27ce30c8682fa682a5fe678161ee58f0dab166ee360cd53bfad169240ff08543"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/generation.json",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "sha": "9030b399739b50de7d03ceaeb6eedaf05c9bfd9e",
+          "patch_sha256": "f45e0fb7cf132ccf98597a3f38580ba9c4a4c6a8abcfa9d747da50c5d1aae623"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/common/meshes/coke_cn_ends.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "b86f3931cad499ad253e45c004872397117dc028",
+          "patch_sha256": "af05b242ec85d7672ca8a9df64182cda371003887fdc84ddce885e766abe603c"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/common/meshes/coke_cn_side.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "15844c849a741661a4bf67d8c4a4f4b4ceebedb5",
+          "patch_sha256": "01881359bdd4e5d44f522ea8994a22dccc2306bb9e984e0ed428a72aa1dfb546"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/common/meshes/coke_collision.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "99b68654fbea58c509a03125311bb108f88fc1c8",
+          "patch_sha256": "60eb4a87cab12be88b76172325b7724b259cf1c8ad31d910cdef1852f9ec0317"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/common/textures/coke.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "3a5e6d6976601928942f9de396fd4dd4852fc523",
+          "patch_sha256": "ec0348aaabf8faac4f78fa322515f1b1b0e2496d0dede1f18d94ae95ea251a87"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/common/textures/coke_cn.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "71bc680e8640f32b2ac1d68f3fc71eac990836dd",
+          "patch_sha256": "db26c3c3b62b42c6fc2ca54dd4cfb6d875fd0b810757893b39e38eb43579dcda"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/can_01/assets/fq/tabletop/mujoco/coke.xml",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "sha": "7d25f2ff1b83f3dbf8ef3514469a51536d330435",
+          "patch_sha256": "481fe3c3866f92d51dd5c56f931ef63265ca9911886fb240122dbe7ee255bc4c"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_base_pbr.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "015c489bec130703fa586a724c5363ef4ddce38d",
+          "patch_sha256": "4b017578cef83f4d74419c2ab0e33f1c4d7489993d137341961a9b527e5e5fdc"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_collision_base.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "ac1fc92e84a8f79d9b6358e4fc776f0b7833479f",
+          "patch_sha256": "eb8b34de3427388b404a11cdf84e693f12de360a1957e2edb53f7eb32b267b02"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_collision_pillar.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "ad705becaf6d7db58459a0900b92d8ba32bc4824",
+          "patch_sha256": "27976394db70b87a9f1bae96e59bdcac96472e2348bc0bcb1216a451f5367507"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_collision_top.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "481cab4b48499974b00b682239d0be9e9e5770a3",
+          "patch_sha256": "d04ce8993caba3c00fbda3fc3643580ab8feb47b13d5541c1ff394aa2b726b4c"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_pillar_pbr.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "e3d3bcef74e4fd8baaa6af0189e99a1e39b6376f",
+          "patch_sha256": "dd8014b5695c10f539d574725da506064992bd775b6e40c0b7a37190e61a32de"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/meshes/round_table_top_pbr.obj",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "af13e7e129efff4871c5a1bdcea58d93ea6b9908",
+          "patch_sha256": "dc6b863bad5324dd6718947fe3f18996530e239163dbb7d930c952a0fce768e8"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/common/textures/surfaces_20260921/table_basecolor.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "ed3435048969d174588266800e64ba9d19de932f",
+          "patch_sha256": "8b855c675558c93a3be9ee49d5692c909b400739e2881604bf8f2862606bca82"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/instances/table_01/assets/fq/tabletop/mujoco/round_table.xml",
+          "status": "added",
+          "additions": 35,
+          "deletions": 0,
+          "sha": "2902e811fd1e2768d940e94a2cf8b858719f32a3",
+          "patch_sha256": "376eaf0526207bebe9223537b6f269c0b3ab1d4a709b6f92d8b11523d380f664"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/isaac/model.usda",
+          "status": "added",
+          "additions": 709,
+          "deletions": 0,
+          "sha": "4e90e5db13ddba1a33df356c483be3684b1d9c40",
+          "patch_sha256": null
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/isaac/texture_1.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "339594b9f34c42bfa142efcd2a39fd3523fae9ef",
+          "patch_sha256": "ac8f6d5905bb356608dc9d08d7db9a668e761591e19b321dc745078f3d87642d"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/isaac/texture_3.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "3a5e6d6976601928942f9de396fd4dd4852fc523",
+          "patch_sha256": "ec0348aaabf8faac4f78fa322515f1b1b0e2496d0dede1f18d94ae95ea251a87"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/isaac/texture_4.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "a4d3badd963d22feabd973723fed36950e6ce9d6",
+          "patch_sha256": "064a39e44505a8a4edafcd873f93ee90004ed1bbb5ee994c00f09df9b0447658"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/preview.glb",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "a8cf19844324ed2dad70dd70d6f36cf5cce32107",
+          "patch_sha256": "c5454460fa07f45329b2cd138ed73b0bc123b4225690bc7dcce5f2595eaf6fd5"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_entry.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "fa7ba41acefdaadc5a027e50633e66b0deaff880",
+          "patch_sha256": "36fefe76932276aadf81e77ca568094f5b685ce3b95b5b9655853b0e8def9727"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_isaac_entry.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "2284e060692b13c5e99d17a5e1bff84e0abc38d5",
+          "patch_sha256": "8e81d14aa0c51c0225a926876ded4196df56833f6fc1c4dd7759e724e08b43c6"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_isaac_overview.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "3ece1b4597bfda82882a6737b3d90478d38edce9",
+          "patch_sha256": "e2f6299d3b27c46119d7dd3f22b46df82f0cdc8037ac00e32cd78f002946f998"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_isaac_target.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "c880363e6a613a48c243082583a215bb86c363a3",
+          "patch_sha256": "e320ef7c66db7b940a4abac0e52011b0332525d59794f9fe57392532a7447b6e"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_overview.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "e978cd9626b5595ba98ff7ef063248302ffbc06b",
+          "patch_sha256": "ddd3e90cb1c29f5e6a2c9cccb5cbccaac58ccd28de6740f7fd371e64d60c62da"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/previews/view_reverse.png",
+          "status": "added",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "fd0bd022826434db025c4f64104f3cda15920cf1",
+          "patch_sha256": "4b413c8a01c92ff29cae176f24302d3e165490735a1c58eed48da19a9bd4aee0"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/provenance.json",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "sha": "c5025d96fb53a609b744026e640a048e7977f221",
+          "patch_sha256": "7a524b0fe0b04af0cb1dcf965455d49e7ced89d79a33a013d9a67c22ab45fae7"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/scene.json",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0,
+          "sha": "8a747a92b2e227ad37e4d9e909c47a4cde816b67",
+          "patch_sha256": "30e81fa7d20946a0c0bb65a047546721bda42d7ca96e47a5211e790a91ca0688"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/scene.xml",
+          "status": "added",
+          "additions": 62,
+          "deletions": 0,
+          "sha": "88bf17448073ae566f454244c52c4f5c09f44cff",
+          "patch_sha256": "23fa95a801552ab3a4d8fdb474f3aa66c613a5ce399a4f728633728dcf67a3c7"
+        },
+        {
+          "filename": "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/validation_evidence.json",
+          "status": "added",
+          "additions": 520,
+          "deletions": 0,
+          "sha": "d1f4caa7bb62d502869ee903f755e8b541aca4dd",
+          "patch_sha256": "3dc7b7a2fed68c6b4de515f08e9c6e8e11803d5d6e598b1749bd688b3b22ada5"
+        },
+        {
+          "filename": "catalog/index.json",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 0,
+          "sha": "f7e1e820deac3ac74a96c79b2b095cdbf2dda249",
+          "patch_sha256": "8ff2de13b05e5257a40e72346698bd94c66be141d3d5114a159402b7fbb4f678"
+        },
+        {
+          "filename": "checksums.json",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 3,
+          "sha": "7857d61f58d9b7c63f0dd7271b3bb951bf132044",
+          "patch_sha256": "9da7fa39bb205ab15fd71fb160c8864f4ab4890e01ad9707d271efdebd1fc237"
+        }
+      ],
+      "additions": 1778,
+      "deletions": 4,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/ForgeAI-Robotics/fq-assets/pulls/1",
+        "diff_url": "https://github.com/ForgeAI-Robotics/fq-assets/pull/1/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "assets.lock.json",
+          "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/SOURCE_NOTICE.md",
+          "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/assembly.json",
+          "assets/generated/fq_scenes_room_table_can_candidate_a1b951c4/asset.json"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Reject non-finite contact materials at finalization",
+      "number": 4905,
+      "url": "https://github.com/newton-physics/newton/pull/4905",
+      "author": "cola1917",
+      "created_at": "2026-10-23T05:15:37Z",
+      "merged_at": "2026-10-31T19:53:01Z",
+      "head_sha": "95988dbbca570c12b6d28792ef357ba424e573c2",
+      "merge_commit_sha": "3ba2f21c183f854167169c0bf11acecb7111016d",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Rejected NaN and infinite contact-material values on colliding shapes during ModelBuilder.finalize(), with array/shape diagnostics. Covered direct, imported USD, and replicated inputs while preserving visual-only exemptions and validation opt-outs; this is not an importer-wide audit.",
+      "files": [
+        {
+          "filename": "changelog/3024.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "44e0deb4d5b6fc226a2771d89bc9c10a8baa8678",
+          "patch_sha256": "baa0fda8a278a0c4641339fae4ee4f004e1c91f70fd916773b81c978e44392bc"
+        },
+        {
+          "filename": "newton/_src/sim/builder.py",
+          "status": "modified",
+          "additions": 38,
+          "deletions": 6,
+          "sha": "27416946ace823789d96ebea88b2f1fe1a98bf64",
+          "patch_sha256": "78437b4329af649b63515374eb89aa96ebca91c6a7308c1264f1301768d27ef1"
+        },
+        {
+          "filename": "newton/tests/steel/test_contacts.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 2,
+          "sha": "f8dce9c90a19111e11c9ed325fef5d11b2451653",
+          "patch_sha256": "c1e8eed1d693547072b183e7cc2079d6d910a186cf4091d5cc2741f3967446d3"
+        },
+        {
+          "filename": "newton/tests/test_import_usd.py",
+          "status": "modified",
+          "additions": 45,
+          "deletions": 0,
+          "sha": "b1be8f24f903085c229b51e57da7e6013ad89f89",
+          "patch_sha256": "273f07672c5a2a67f2f5e289effbfe3c7dbe131b2ebaa40303f982c5995d01d4"
+        },
+        {
+          "filename": "newton/tests/test_model.py",
+          "status": "modified",
+          "additions": 78,
+          "deletions": 0,
+          "sha": "f370b7c28b4e8b8d32f420d03d2dba41c28b2d11",
+          "patch_sha256": "634f55a7bdfe1e0bd74e10f88ccda61a73aed46de7a23cb3a4f6d2aae4ef8021"
+        }
+      ],
+      "additions": 163,
+      "deletions": 8,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4905",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4905/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4905#discussion_r4356354331",
+          "https://github.com/newton-physics/newton/pull/4905#discussion_r4356354338",
+          "https://github.com/newton-physics/newton/pull/4905#discussion_r4356568449",
+          "https://github.com/newton-physics/newton/pull/4905#discussion_r4356568452",
+          "https://github.com/newton-physics/newton/pull/4905#issuecomment-6357964808",
+          "https://github.com/newton-physics/newton/pull/4905#issuecomment-6357997531",
+          "https://github.com/newton-physics/newton/pull/4905#issuecomment-6430553105",
+          "https://github.com/newton-physics/newton/pull/4905#issuecomment-6488526780",
+          "https://github.com/newton-physics/newton/pull/4905#issuecomment-6510951191",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5624202009",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5624453986",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5624453987",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5703910568",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5706314977",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5715522296",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5722825765",
+          "https://github.com/newton-physics/newton/pull/4905#pullrequestreview-5724394425"
+        ],
+        "reviewed_files": [
+          "newton/_src/sim/builder.py",
+          "newton/tests/steel/test_contacts.py",
+          "newton/tests/test_import_usd.py",
+          "newton/tests/test_model.py"
+        ]
+      }
+    },
+    {
+      "repository": "google-deepmind/mujoco_warp",
+      "repository_url": "https://github.com/google-deepmind/mujoco_warp",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Fix contact sensor directions after reduction sorting",
+      "number": 1853,
+      "url": "https://github.com/google-deepmind/mujoco_warp/pull/1853",
+      "author": "cola1917",
+      "created_at": "2026-10-28T04:35:06Z",
+      "merged_at": "2026-10-30T18:11:10Z",
+      "head_sha": "b02b168851bdb87b328f259e09d1b82c4d9628ed",
+      "merge_commit_sha": "f0c8970c7c5f42f96aba942dc5ce4bd71e8881b9",
+      "contribution_type": [
+        "algorithm_correctness_fix",
+        "performance_preservation"
+      ],
+      "technical_summary": "Kept contact direction attached to contact IDs through mindist/maxforce reduction sorting by complement-encoding negative directions. Removed the separate direction buffer while retaining the single-int GPU sort; regressions compare native MuJoCo across heterogeneous worlds and CPU/CUDA graph replay. Public PR measurements describe removal of a regression, not a general speedup.",
+      "files": [
+        {
+          "filename": "mujoco_warp/_src/sensor.py",
+          "status": "modified",
+          "additions": 18,
+          "deletions": 17,
+          "sha": "c393c19c95069d43eaa980e79baef234a6713a42",
+          "patch_sha256": "0018cc6a0bbdf66c530dd1a6b935ffd843921958df28d96671e0a20645dc8764"
+        },
+        {
+          "filename": "mujoco_warp/_src/sensor_test.py",
+          "status": "modified",
+          "additions": 77,
+          "deletions": 0,
+          "sha": "0a11c4ecd05b9cadecd0baff16840334b5a5b7aa",
+          "patch_sha256": "d21601040ca4f882ccbac0762120fb94bbdef43bcb09a9105815f61bf3007cea"
+        }
+      ],
+      "additions": 95,
+      "deletions": 17,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/google-deepmind/mujoco_warp/pulls/1853",
+        "diff_url": "https://github.com/google-deepmind/mujoco_warp/pull/1853/files",
+        "discussion_urls": [
+          "https://github.com/google-deepmind/mujoco_warp/pull/1853#issuecomment-6512622242",
+          "https://github.com/google-deepmind/mujoco_warp/pull/1853#issuecomment-6513442105",
+          "https://github.com/google-deepmind/mujoco_warp/pull/1853#pullrequestreview-5716196434"
+        ],
+        "reviewed_files": [
+          "mujoco_warp/_src/sensor.py",
+          "mujoco_warp/_src/sensor_test.py"
+        ]
+      }
+    },
+    {
+      "repository": "eric-heiden/newton",
+      "repository_url": "https://github.com/eric-heiden/newton",
+      "repository_fork": true,
+      "repository_parent": "newton-physics/newton",
+      "repository_category": "fork",
+      "title": "Test MJCF camera intrinsics and mount transforms",
+      "number": 17,
+      "url": "https://github.com/eric-heiden/newton/pull/17",
+      "author": "cola1917",
+      "created_at": "2026-10-27T14:24:56Z",
+      "merged_at": "2026-10-29T19:01:42Z",
+      "head_sha": "9c5f244dace21d08be7585666780972e7ee2c6b4",
+      "merge_commit_sha": "d6081f75c2a558a503997284478426346397ae62",
+      "contribution_type": [
+        "test_enhancement"
+      ],
+      "technical_summary": "Added MJCF camera-import tests comparing inherited/physical/pixel intrinsics and moving-body mount transforms against native MuJoCo. Test-only merge into eric-heiden/newton, a fork; not a merged contribution to newton-physics/newton.",
+      "files": [
+        {
+          "filename": "newton/tests/test_import_mjcf.py",
+          "status": "modified",
+          "additions": 101,
+          "deletions": 0,
+          "sha": "c28a5ed8b20c8d0675f36b71637d85194f26ea3f",
+          "patch_sha256": "d42032626cfc0783ddeeae9999dc1c1d60185da15b5d8dfa3e392335299179aa"
+        }
+      ],
+      "additions": 101,
+      "deletions": 0,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/eric-heiden/newton/pulls/17",
+        "diff_url": "https://github.com/eric-heiden/newton/pull/17/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "newton/tests/test_import_mjcf.py"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Fix runtime shape colors in the single-model RTX viewer",
+      "number": 4890,
+      "url": "https://github.com/newton-physics/newton/pull/4890",
+      "author": "cola1917",
+      "created_at": "2026-10-22T11:15:49Z",
+      "merged_at": "2026-10-28T21:00:01Z",
+      "head_sha": "63d7525054ea917fe3cc46f1e15b15cdca817868",
+      "merge_commit_sha": "6eaec47e31bda3a1a66e899ee847decba64bea21",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Restored runtime shape-color updates in the single-model RTX path through per-instance USD display-color readers. Kept built-instance mappings stable across viewer repacking and used a device-side change flag to avoid full color readback on unchanged frames, without rebuilding geometry.",
+      "files": [
+        {
+          "filename": "changelog/4827.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "6fdbe28d811d09adf5928241eec8d25983d6ed79",
+          "patch_sha256": "599982a9bc04acb8e67da7c700d70a863db77ac63b1a7f3cbf0abf9746041cc4"
+        },
+        {
+          "filename": "newton/_src/viewer/kernels.py",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 0,
+          "sha": "ce5aa435b15d244150756776002f63311cb60aa6",
+          "patch_sha256": "b59b1035983a75d1af263c8624b31ce8ce19f0de438d04e2171ebab9e01fbfb8"
+        },
+        {
+          "filename": "newton/_src/viewer/viewer_rtx.py",
+          "status": "modified",
+          "additions": 74,
+          "deletions": 1,
+          "sha": "be6761ec7d9ce9fd80c2fc16df8b7fe9cce9ac46",
+          "patch_sha256": "08321f7c054ea40247b621057775bfc0f3b068bfad84082036ef5da5a7c8c98a"
+        },
+        {
+          "filename": "newton/_src/viewer/viewer_viser.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "38775408277a08bd0f42fd27991cc579c2e5949e",
+          "patch_sha256": "e9710e115049b7038d3303f09cdba02a0bee9f164817d8ba4824e1f79a42d39f"
+        },
+        {
+          "filename": "newton/_src/viewer/viewer_viser_kernels.py",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 14,
+          "sha": "7dfb1ca991e00cbfa1dc8faf61fd8ff89e3df9af",
+          "patch_sha256": "e4f89154cc17195f8144981fab5a0fa8f6fb1adf2a90da56a524290d793277b2"
+        },
+        {
+          "filename": "newton/tests/test_viewer_rtx.py",
+          "status": "modified",
+          "additions": 75,
+          "deletions": 0,
+          "sha": "eaca5cae31eda19c12bbbf5ae5297a5002615960",
+          "patch_sha256": "bf8cd57a03b4a1d12b556f5800f81d3384c3c22d99cac3151a390fadf1985169"
+        }
+      ],
+      "additions": 166,
+      "deletions": 17,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4890",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4890/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4347806430",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4347806438",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4347806446",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4348025432",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4348025762",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4348026167",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4348952780",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4349641565",
+          "https://github.com/newton-physics/newton/pull/4890#discussion_r4349724345",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6339407758",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6339728205",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6342682729",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6353604272",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6365467786",
+          "https://github.com/newton-physics/newton/pull/4890#issuecomment-6456631238",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5613498494",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5613773358",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5613773798",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5613774278",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5615040447",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5615725207",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5615909741",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5616016308",
+          "https://github.com/newton-physics/newton/pull/4890#pullrequestreview-5673182344"
+        ],
+        "reviewed_files": [
+          "newton/_src/viewer/kernels.py",
+          "newton/_src/viewer/viewer_rtx.py",
+          "newton/_src/viewer/viewer_viser.py",
+          "newton/_src/viewer/viewer_viser_kernels.py"
+        ]
+      }
+    },
+    {
+      "repository": "colmap/colmap",
+      "repository_url": "https://github.com/colmap/colmap",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Expose Ceres solver thresholds in incremental mapping",
+      "number": 4892,
+      "url": "https://github.com/colmap/colmap/pull/4892",
+      "author": "cola1917",
+      "created_at": "2026-10-24T05:09:40Z",
+      "merged_at": "2026-10-28T10:11:15Z",
+      "head_sha": "d711a023af738a7c9262c733293ba575b853a768",
+      "merge_commit_sha": "f00d6063bb0b120cf10ee190f7f06f4a34edf432",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Exposed five existing Ceres solver-selection image-count thresholds for local and global incremental bundle adjustment through C++ pipeline options, Mapper CLI/project settings, and PyCOLMAP. Preserved defaults and added propagation, round-trip, and reconstruction tests; no GPU performance claim.",
+      "files": [
+        {
+          "filename": "doc/faq.rst",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "sha": "f65221be474a84598dc5291d448210aaf50ce264",
+          "patch_sha256": "e386cc02306e9e6ea20130b4c7076b7ca95bdb5a01e0e84ab845593845140b82"
+        },
+        {
+          "filename": "src/colmap/controllers/incremental_pipeline.cc",
+          "status": "modified",
+          "additions": 27,
+          "deletions": 0,
+          "sha": "5481f9663f5d672137549d29d603989a3d1a4d22",
+          "patch_sha256": "28e6944731bc1e950f7a1c10b4f303d19187663f1684f11b0a7569fb7b579391"
+        },
+        {
+          "filename": "src/colmap/controllers/incremental_pipeline.h",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 0,
+          "sha": "01738dff03ba8ba5050cd35ac36adaea5d1a8e53",
+          "patch_sha256": "4e4b9e74826c32d0d480ed7d7c40eb5e402c9794338b99cfeb1f0cd95bf962fc"
+        },
+        {
+          "filename": "src/colmap/controllers/incremental_pipeline_test.cc",
+          "status": "modified",
+          "additions": 53,
+          "deletions": 0,
+          "sha": "211086ee7c124e5039185800040a423bed3e6a88",
+          "patch_sha256": "abb32e069926cef32d7d475793817c0f90b1821f5a7ade918bae190a4e3fe316"
+        },
+        {
+          "filename": "src/colmap/controllers/option_manager.cc",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 0,
+          "sha": "57438a7ac40da1a260586eb854188f88cdb108f1",
+          "patch_sha256": "e2b760da9763a61af0b1355bf6d056b4d052dfbd35892d4199a8d2aee6ac84f0"
+        },
+        {
+          "filename": "src/colmap/controllers/option_manager_test.cc",
+          "status": "modified",
+          "additions": 36,
+          "deletions": 0,
+          "sha": "c6e1fb05ea5b497d878fc1c7716f3cd3bec27bfd",
+          "patch_sha256": "908dd61f0a32d0ba25b823d1a752cdb57a98ec8fd7699caf6ea20e1252538b01"
+        },
+        {
+          "filename": "src/pycolmap/sfm/incremental_mapper.cc",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 0,
+          "sha": "3563437409766cc50b2b7a732cbb7ccc46a2f3d8",
+          "patch_sha256": "a87fcadb08e9d1f39afc8759da18569f093bb8eeca2a7f0601e72ba18946907b"
+        },
+        {
+          "filename": "src/pycolmap/sfm/incremental_mapper_test.py",
+          "status": "modified",
+          "additions": 39,
+          "deletions": 2,
+          "sha": "5315d9d8c3ece0c9fcec5e1cce4cff72bb355b97",
+          "patch_sha256": "8e1075bb27cfc90b1b442de1998dbfa4780fc796f52a3bae0384e031a0d27b1d"
+        }
+      ],
+      "additions": 206,
+      "deletions": 2,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/colmap/colmap/pulls/4892",
+        "diff_url": "https://github.com/colmap/colmap/pull/4892/files",
+        "discussion_urls": [
+          "https://github.com/colmap/colmap/pull/4892#issuecomment-6462597013",
+          "https://github.com/colmap/colmap/pull/4892#pullrequestreview-5663967425"
+        ],
+        "reviewed_files": [
+          "doc/faq.rst",
+          "src/colmap/controllers/incremental_pipeline.cc",
+          "src/colmap/controllers/incremental_pipeline.h",
+          "src/colmap/controllers/incremental_pipeline_test.cc"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Preserve high-valence Style3D matrix connections",
+      "number": 4942,
+      "url": "https://github.com/newton-physics/newton/pull/4942",
+      "author": "cola1917",
+      "created_at": "2026-10-27T02:59:04Z",
+      "merged_at": "2026-10-27T17:45:58Z",
+      "head_sha": "c0e0ca6b0171aa5d33915f5e96da73d7407938de",
+      "merge_commit_sha": "71aec70defafe909a75c67ec2cec98231d6ba355",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Prevented silent truncation of high-valence Style3D projective-dynamics matrix connections. Retry overflowed 32-wide assembly with topology-derived capacity and reject incomplete builders; regressions compare entries against dense assembly, symmetry, and translation-nullspace checks.",
+      "files": [
+        {
+          "filename": "changelog/4930.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "7f7df16b493985c79b27839cb9ad801caf098d16",
+          "patch_sha256": "5aa2174783ebdd4883b73267e7bc6f60e341dd6182b92afa490f26a278fc7d72"
+        },
+        {
+          "filename": "newton/_src/solvers/style3d/builder.py",
+          "status": "modified",
+          "additions": 39,
+          "deletions": 8,
+          "sha": "af5482c13d8359b01133d940b6b104911a54f213",
+          "patch_sha256": "c65e7a62e286d2d3aafdc527dde6f69fbc01fe9f985da0c6c50079e3d29ffdd0"
+        },
+        {
+          "filename": "newton/_src/solvers/style3d/solver_style3d.py",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 11,
+          "sha": "3031d7b4a35edc413b0c6b9f04f165aea30dbba7",
+          "patch_sha256": "e2a05a9a113b31225d4456fe6f118be1b32eb063e3f983b67301981271a529b9"
+        },
+        {
+          "filename": "newton/tests/test_solver_style3d.py",
+          "status": "modified",
+          "additions": 117,
+          "deletions": 3,
+          "sha": "955feaf9e27847eae6d4fab40728cc3cae6e43b9",
+          "patch_sha256": "165b42e512304cbe7f35b92887fbdca116d3557c5734cda8b921f8581b87e5f5"
+        }
+      ],
+      "additions": 173,
+      "deletions": 22,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4942",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4942/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384681853",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384681860",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384702818",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384888712",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384889041",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384889618",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4384906383",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4385164474",
+          "https://github.com/newton-physics/newton/pull/4942#discussion_r4385186579",
+          "https://github.com/newton-physics/newton/pull/4942#issuecomment-6432641868",
+          "https://github.com/newton-physics/newton/pull/4942#issuecomment-6432667637",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5661736835",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5661762270",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5661985504",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5661985926",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5661986627",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5662007135",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5662317400",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5662344818",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5665195560",
+          "https://github.com/newton-physics/newton/pull/4942#pullrequestreview-5670870492"
+        ],
+        "reviewed_files": [
+          "newton/_src/solvers/style3d/builder.py",
+          "newton/_src/solvers/style3d/solver_style3d.py",
+          "newton/tests/test_solver_style3d.py"
+        ]
+      }
+    },
+    {
+      "repository": "colmap/colmap",
+      "repository_url": "https://github.com/colmap/colmap",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Improve CUDA driver failure diagnostics",
+      "number": 4903,
+      "url": "https://github.com/colmap/colmap/pull/4903",
+      "author": "cola1917",
+      "created_at": "2026-10-27T08:53:30Z",
+      "merged_at": "2026-10-27T11:07:39Z",
+      "head_sha": "3a70d3d78a63237d825dcc6a36518e3f696e0bf0",
+      "merge_commit_sha": "15526bb9a7bca6d1843b8b849169d7f6ce4f900b",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Added actionable insufficient-driver diagnostics and a common CUDA/HIP error formatter while preserving the zero-device return used by CPU-fallback callers. Added error-code/description tests; does not claim to fix Windows CLI exception termination or verify HIP execution.",
+      "files": [
+        {
+          "filename": "src/colmap/util/CMakeLists.txt",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 0,
+          "sha": "b7bd6074fc44b734017b27a8d0ec351727a92b97",
+          "patch_sha256": "c71d45b9b44c39ae69df38a99f2ad1b9fe6276b0fe352b6bd03476246dc72e4a"
+        },
+        {
+          "filename": "src/colmap/util/cuda.cc",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 1,
+          "sha": "d294e4da19d96219e6b528a1a0717704be237f3c",
+          "patch_sha256": "94418efb6c6a224086515f84f21e12364ac0322f1573f4331cace96333636b05"
+        },
+        {
+          "filename": "src/colmap/util/cudacc.cc",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 4,
+          "sha": "811aab72165b66e57f6b780a2709ddad4663dc9b",
+          "patch_sha256": "47f7f2603d0dbd49c71e105fa244220e4c3599d4ca2ae43d8ec053c4aa56e57b"
+        },
+        {
+          "filename": "src/colmap/util/cudacc.h",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "sha": "85dd11a25b7a8d894594e30ef2b56a95bed058e4",
+          "patch_sha256": "ca53d06b54a918f38933de57ffcd8bc460888609951a59ad769327e72b0b10f4"
+        },
+        {
+          "filename": "src/colmap/util/cudacc_test.cc",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "sha": "a389c3d595b3c34f416330a2c01192ef27edc92c",
+          "patch_sha256": "262b57e2f69a6fd150fe297dce7660dbf57a2a1babc944bd2053df7c70a34ee9"
+        }
+      ],
+      "additions": 100,
+      "deletions": 5,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/colmap/colmap/pulls/4903",
+        "diff_url": "https://github.com/colmap/colmap/pull/4903/files",
+        "discussion_urls": [
+          "https://github.com/colmap/colmap/pull/4903#discussion_r4386775574",
+          "https://github.com/colmap/colmap/pull/4903#discussion_r4386919610",
+          "https://github.com/colmap/colmap/pull/4903#pullrequestreview-5664508641",
+          "https://github.com/colmap/colmap/pull/4903#pullrequestreview-5664516850",
+          "https://github.com/colmap/colmap/pull/4903#pullrequestreview-5664711445"
+        ],
+        "reviewed_files": [
+          "src/colmap/util/CMakeLists.txt",
+          "src/colmap/util/cuda.cc",
+          "src/colmap/util/cudacc.cc",
+          "src/colmap/util/cudacc.h"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Fix IK tree-joint and body indexing",
+      "number": 4871,
+      "url": "https://github.com/newton-physics/newton/pull/4871",
+      "author": "cola1917",
+      "created_at": "2026-10-21T13:41:32Z",
+      "merged_at": "2026-10-27T08:26:46Z",
+      "head_sha": "1ee59d042614a2c061a7de10ec939e2496f87d6c",
+      "merge_commit_sha": "c366e190b087492f2ba4a11074ff3c5066568d4e",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Corrected analytic IK forward-kinematics and Jacobian indexing when joint and body indices differ. Follow articulation-tree ancestors, seed external root poses, and reject unsupported objective links or multiply articulated bodies; loop-closure constraints are not enforced.",
+      "files": [
+        {
+          "filename": "changelog/4865.changed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "8f7718fbc4c8d19873948d267c55b1036e0cdb9d",
+          "patch_sha256": "c29b9b33c3c96c26ccd8dd489ef2fcaaf27d9626fe1f63358dd610eedd5c432f"
+        },
+        {
+          "filename": "changelog/4865.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "ef0792f112f18b7d01cf81bc1f67423a20e3efec",
+          "patch_sha256": "8ebdf4677a083d79bb0462aaccd9adf8ce1c462741df2f0b3b9ec6caf3d53234"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_common.py",
+          "status": "modified",
+          "additions": 41,
+          "deletions": 5,
+          "sha": "75e35b758c19d98d40a8f8cbb1916c73b83ce81a",
+          "patch_sha256": "f7599323aa7724c622e1d9e94606b1f5ccb023246bd6ca509d6f96ea58bafb29"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 4,
+          "sha": "8bd9378e4c26b37fa23eb43077f8c536d5797afd",
+          "patch_sha256": "f63a2daac6369c804a5da547f2c4746c404bdf24c55c810f0cd5d80e865b37b8"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_lm_optimizer.py",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 3,
+          "sha": "01bdeaa1aa88ca0192e033cbec8b599345206ffa",
+          "patch_sha256": "7482b10bcd433fe5ba80eab67fa0115a24044d4d728709ba2ef8a3b98053c143"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_objectives.py",
+          "status": "modified",
+          "additions": 45,
+          "deletions": 46,
+          "sha": "d01d7385f31f091e9fb57510cc6ed7652e88c0ff",
+          "patch_sha256": "8d0c6d58a68e5efdde7711e82496c4666ddcd1a4d19150ef7d2bb3a17ef7c524"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_solver.py",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0,
+          "sha": "2baf590dadae15ec1c998fabde5eb3e052aa5d32",
+          "patch_sha256": "9968b925e37ba2bacf000c74a55819043593637123692b5c2d35618db1a64dfe"
+        },
+        {
+          "filename": "newton/tests/test_ik_fk_kernels.py",
+          "status": "modified",
+          "additions": 177,
+          "deletions": 1,
+          "sha": "3a8eb186ac1a190fcb697a4c8825bc3d08b4fa59",
+          "patch_sha256": "260fade007598848f43d56e50550046fdbb9e98003f3d058400e39621fb514b8"
+        }
+      ],
+      "additions": 346,
+      "deletions": 59,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4871",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4871/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4337695808",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4337695820",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4337695830",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338000608",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338001556",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338002684",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338034072",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338193504",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338193542",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338193551",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338332074",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338332773",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338333489",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338334162",
+          "https://github.com/newton-physics/newton/pull/4871#discussion_r4338486501",
+          "https://github.com/newton-physics/newton/pull/4871#issuecomment-6317566632",
+          "https://github.com/newton-physics/newton/pull/4871#issuecomment-6317825073",
+          "https://github.com/newton-physics/newton/pull/4871#issuecomment-6344303299",
+          "https://github.com/newton-physics/newton/pull/4871#issuecomment-6434690455",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5600711191",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5600836515",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601236144",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601237320",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601238753",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601278053",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601483267",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601662698",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601663594",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601664495",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601665382",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5601861356",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5627263163",
+          "https://github.com/newton-physics/newton/pull/4871#pullrequestreview-5662443677"
+        ],
+        "reviewed_files": [
+          "newton/_src/sim/ik/ik_common.py",
+          "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+          "newton/_src/sim/ik/ik_lm_optimizer.py",
+          "newton/_src/sim/ik/ik_objectives.py"
+        ]
+      }
+    },
+    {
+      "repository": "pypose/pypose",
+      "repository_url": "https://github.com/pypose/pypose",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Preserve expanded views in Lie-group input broadcasting",
+      "number": 439,
+      "url": "https://github.com/pypose/pypose/pull/439",
+      "author": "cola1917",
+      "created_at": "2026-10-24T15:16:49Z",
+      "merged_at": "2026-10-25T23:50:12Z",
+      "head_sha": "87025f242d11522b0dc5322d275ebeea89d164b6",
+      "merge_commit_sha": "d904234e11065a7ef30bdd1647aa489cc97f2154",
+      "contribution_type": [
+        "performance_optimization",
+        "bug_fix"
+      ],
+      "technical_summary": "Preserved expanded views instead of flattening and copying broadcast Lie-group inputs across SO3, SE3, RxSO3, and Sim3. Made Act outputs contiguous for downstream view compatibility; regressions cover non-contiguous/empty inputs and forward/backward equivalence. PR-reported allocation measurements support input-copy removal, not resolution of the original full bundle-adjustment OOM.",
+      "files": [
+        {
+          "filename": "pypose/lietensor/lietensor.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4,
+          "sha": "a2bfea1c8408fb155ed38599d3057268624b130c",
+          "patch_sha256": "ddb1f395ab675b01cb5bb945e6dde1a47458186a2684fdf92e5bcdb9deb19f63"
+        },
+        {
+          "filename": "pypose/lietensor/operation.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 6,
+          "sha": "7b5a85ba9cdccf68d506947ba2317e1bd72b9c8a",
+          "patch_sha256": "88fa8ae9ea23a7cc02bfd7b94fae1c2dfd3de2c87f42ac91786f0cf7de18db75"
+        },
+        {
+          "filename": "tests/lietensor/test_broadcast_inputs.py",
+          "status": "added",
+          "additions": 107,
+          "deletions": 0,
+          "sha": "cd66ec70ec17dc36887927ddfae31ad74b3a1e11",
+          "patch_sha256": "ac0d818e56068a6268e79452ac06175962a01a280b4e5cf0508d8d444ea5c87a"
+        }
+      ],
+      "additions": 115,
+      "deletions": 10,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/pypose/pypose/pulls/439",
+        "diff_url": "https://github.com/pypose/pypose/pull/439/files",
+        "discussion_urls": [
+          "https://github.com/pypose/pypose/pull/439#issuecomment-6386112473",
+          "https://github.com/pypose/pypose/pull/439#issuecomment-6386200031",
+          "https://github.com/pypose/pypose/pull/439#issuecomment-6386451820",
+          "https://github.com/pypose/pypose/pull/439#issuecomment-6390899291",
+          "https://github.com/pypose/pypose/pull/439#issuecomment-6404980502",
+          "https://github.com/pypose/pypose/pull/439#pullrequestreview-5638804730",
+          "https://github.com/pypose/pypose/pull/439#pullrequestreview-5644617069",
+          "https://github.com/pypose/pypose/pull/439#pullrequestreview-5646007196"
+        ],
+        "reviewed_files": [
+          "pypose/lietensor/lietensor.py",
+          "pypose/lietensor/operation.py",
+          "tests/lietensor/test_broadcast_inputs.py"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Fix runtime shape opacity in the single-model RTX viewer",
+      "number": 4894,
+      "url": "https://github.com/newton-physics/newton/pull/4894",
+      "author": "cola1917",
+      "created_at": "2026-10-22T13:51:35Z",
+      "merged_at": "2026-10-22T22:44:18Z",
+      "head_sha": "42945282dab472f17030137150b6faeba595f053",
+      "merge_commit_sha": "12d03b030aeaaf38956e62a76a01760ec36f3747",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Restored runtime shape-opacity updates in the single-model RTX viewer using per-instance opacity/IOR primvars and stable instance mappings. Preserved explicit fractional-opacity settings, reused device-side change detection, and added rendered-pixel regressions.",
+      "files": [
+        {
+          "filename": "changelog/4892.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "aeeb4fb4bdb5a7a36e0cd3cb14c49dc41b5abf38",
+          "patch_sha256": "34475d55b7e38daf558bf4f55e098b484e1d979dc7bbac758e1d537e376bd196"
+        },
+        {
+          "filename": "newton/_src/viewer/viewer_rtx.py",
+          "status": "modified",
+          "additions": 108,
+          "deletions": 4,
+          "sha": "79b50584bc4bf65c9389ed1d1f1f19863c5e62f6",
+          "patch_sha256": "ca0333d386419346b1651253bbe82b82e7c4a873b855bde9ee9f70a7430d7588"
+        },
+        {
+          "filename": "newton/tests/test_viewer_rtx.py",
+          "status": "modified",
+          "additions": 108,
+          "deletions": 0,
+          "sha": "6d7513362aacda99dce2559fc2148e5431bffef2",
+          "patch_sha256": "f920c3cb2efaaaf8fa107dd229d2c4e576108d0aae0858e1ad9abae2c32918f5"
+        }
+      ],
+      "additions": 217,
+      "deletions": 4,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4894",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4894/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349480455",
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349480477",
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349480530",
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349768521",
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349771236",
+          "https://github.com/newton-physics/newton/pull/4894#discussion_r4349771612",
+          "https://github.com/newton-physics/newton/pull/4894#issuecomment-6342449244",
+          "https://github.com/newton-physics/newton/pull/4894#issuecomment-6343041537",
+          "https://github.com/newton-physics/newton/pull/4894#issuecomment-6343600305",
+          "https://github.com/newton-physics/newton/pull/4894#issuecomment-6352300587",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5615399797",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5615708262",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5616071966",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5616075246",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5616075704",
+          "https://github.com/newton-physics/newton/pull/4894#pullrequestreview-5621171015"
+        ],
+        "reviewed_files": [
+          "newton/_src/viewer/viewer_rtx.py",
+          "newton/tests/test_viewer_rtx.py"
+        ]
+      }
+    },
+    {
+      "repository": "newton-physics/newton",
+      "repository_url": "https://github.com/newton-physics/newton",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "verified_upstream",
+      "title": "Preserve L-BFGS autodiff line-search residuals",
+      "number": 4874,
+      "url": "https://github.com/newton-physics/newton/pull/4874",
+      "author": "cola1917",
+      "created_at": "2026-10-21T14:35:38Z",
+      "merged_at": "2026-10-22T10:36:06Z",
+      "head_sha": "e7cbf42c9c481a52a4771d22b7cd2e4833f1ae9f",
+      "merge_commit_sha": "ae8eb4062c92e8dad38f33f41c5d66ce066d6399",
+      "contribution_type": [
+        "algorithm_correctness_fix"
+      ],
+      "technical_summary": "Gave L-BFGS candidate residuals independent gradient storage so Warp tape.zero() cannot erase line-search costs and accept an increasing step. Added a CPU/CUDA regression through public IKSolver behavior.",
+      "files": [
+        {
+          "filename": "changelog/4873.fixed.md",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "b4e08af2b90a578602187e83789062ad81720fc2",
+          "patch_sha256": "e4d7003212b2b18c88f7c02cebafca296c25f17d4ff99231657536c593bfcb6e"
+        },
+        {
+          "filename": "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+          "status": "modified",
+          "additions": 8,
+          "deletions": 1,
+          "sha": "07362ae9b9ff49be0026c4edfbf43a9876e8d127",
+          "patch_sha256": "34f461e67ebce893abfe9cd5b4ef788a16a07214afc83358b2cbce925bf85168"
+        },
+        {
+          "filename": "newton/tests/test_ik_lbfgs.py",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 1,
+          "sha": "feb03567cb3e82a303d083101f7126e6a8ff0607",
+          "patch_sha256": "3824357aa6453198b29bed0ccca3cd14fa975eb0405ef39ab2665efa7f483b47"
+        }
+      ],
+      "additions": 39,
+      "deletions": 2,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/newton-physics/newton/pulls/4874",
+        "diff_url": "https://github.com/newton-physics/newton/pull/4874/files",
+        "discussion_urls": [
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6318731479",
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6318849206",
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6319294731",
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6329722607",
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6335618821",
+          "https://github.com/newton-physics/newton/pull/4874#issuecomment-6336806334",
+          "https://github.com/newton-physics/newton/pull/4874#pullrequestreview-5611945888",
+          "https://github.com/newton-physics/newton/pull/4874#pullrequestreview-5611980885"
+        ],
+        "reviewed_files": [
+          "newton/_src/sim/ik/ik_lbfgs_optimizer.py",
+          "newton/tests/test_ik_lbfgs.py"
+        ]
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Update sections 7 and 8 in PAIR_PROGRAMMING.md with new content",
+      "number": 51,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/51",
+      "author": "cola1917",
+      "created_at": "2026-05-12T14:34:53Z",
+      "merged_at": "2026-05-12T14:35:25Z",
+      "head_sha": "f03466684a8f3784774aabd44fe2de32f99b2a59",
+      "merge_commit_sha": "b0647a60335835590683c51f4c74fad9ebbdd29f",
+      "contribution_type": [
+        "documentation"
+      ],
+      "technical_summary": "Updated pair-programming documentation; this is a documentation contribution rather than an algorithm or simulation change.",
+      "files": [
+        {
+          "filename": "PAIR_PROGRAMMING.md",
+          "status": "modified",
+          "additions": 26,
+          "deletions": 16,
+          "sha": "302ffdb164cd9d21a619bda8ba33a3f3d122caf4",
+          "patch_sha256": "9b472d7244f36a94c661a63585f899647ac23adf565e7b6f4ada79d25d196185"
+        }
+      ],
+      "additions": 26,
+      "deletions": 16,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/51",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/51/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "PAIR_PROGRAMMING.md"
+        ]
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "This PR improves Iteration 2 backend test coverage and cleans up the test/reporting workflow.",
+      "number": 41,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/41",
+      "author": "cola1917",
+      "created_at": "2026-04-30T11:20:52Z",
+      "merged_at": "2026-04-30T11:34:30Z",
+      "head_sha": "a13b48b2b849e479d1b4679c17fe67bda18e9780",
+      "merge_commit_sha": "34826404caefe447d0f3f85aef187267b5fbf56d",
+      "contribution_type": [
+        "test_enhancement",
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Expanded challenge-status and rule-based backend tests, migrated API smoke checks to pytest, added integration metrics/retry support and mock-AI controls, and revised report/coverage configuration.",
+      "files": [
+        {
+          "filename": ".github/workflows/test-flow.yml",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 2,
+          "sha": "90a3e0dba0c430c574d60082422d1e0d7ae61bba",
+          "patch_sha256": "a45c4302e5390e4d5e5eb01c6b6b2c6db2ef444aec425006b1ac2980366568c9"
+        },
+        {
+          "filename": "nutri-health-api/app/routers/scan.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "9a0e8fa9c4dbe3cc324647079f0bf2298e2f3de0",
+          "patch_sha256": "b20e75644216929360743b6ff0f13781c38133c8bd9d3e43a79fc69db94538ca"
+        },
+        {
+          "filename": "nutri-health-api/app/services/gemini.py",
+          "status": "modified",
+          "additions": 43,
+          "deletions": 0,
+          "sha": "914392cdc537fb9f76e4df56e4193ede858e47e0",
+          "patch_sha256": "2396242e6debd288eed23761371ec1cd27debb28b0aaea0b67352b7e065d7824"
+        },
+        {
+          "filename": "tests/api-deploy/README.md",
+          "status": "modified",
+          "additions": 56,
+          "deletions": 15,
+          "sha": "12a5f10653087e54175a904a9e75dff4fa58bbea",
+          "patch_sha256": "1dccbbb3ac46e55e812f9964f352791beb28eed51098603c6d24abc113fcf28b"
+        },
+        {
+          "filename": "tests/api-deploy/conftest.py",
+          "status": "added",
+          "additions": 182,
+          "deletions": 0,
+          "sha": "f689b19b467c5f89521946fea93fb509affe55de",
+          "patch_sha256": "e38f0febe3da0940c9798303403c2fb0f726aeb88f2eb323cd0c99885e56d0fe"
+        },
+        {
+          "filename": "tests/api-deploy/metrics_collector.py",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "sha": "ccb67cdf480dc70bd3efd1fbc9900eb2e326f078",
+          "patch_sha256": "c0ddaa48315c04cd456906289acbc6a1f7219b7901fd24ed1358223b32533e82"
+        },
+        {
+          "filename": "tests/api-deploy/requirements.txt",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0,
+          "sha": "c253f2967d2fffa4397d5b531d5f7f3e6882066e",
+          "patch_sha256": "c3d6437a31e05a1dc0fa47762dfd1b5f892f3c4a3ad3082ccd66548fcb3dde70"
+        },
+        {
+          "filename": "tests/api-deploy/scripts/api_smoke_test.sh",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 354,
+          "sha": "4a986d4d6a369baa533a32e1d009c8a514844f8e",
+          "patch_sha256": "fe121d68c7a1c5c14367e0d866db14e58f62f155f12ff74f1cf56a5151ebda0e"
+        },
+        {
+          "filename": "tests/api-deploy/test_daily_challenge_api.py",
+          "status": "modified",
+          "additions": 51,
+          "deletions": 19,
+          "sha": "2aaad987af915a3b7e599b7d9d019a24b7d05f2f",
+          "patch_sha256": "7baecaa047f44a65ef85d96736b0716f8c08ed85f78530b41b98a2005135a20a"
+        },
+        {
+          "filename": "tests/api-deploy/test_regression.py",
+          "status": "added",
+          "additions": 361,
+          "deletions": 0,
+          "sha": "9a05e3f5d686ecee450148f97c0dd9655bdae3ce",
+          "patch_sha256": "93fd588c16fb067fc35c5ab40904224cf940e07c60b363ba4ec4d2921840ae04"
+        },
+        {
+          "filename": "tests/api-deploy/test_smoke.py",
+          "status": "added",
+          "additions": 164,
+          "deletions": 0,
+          "sha": "4d51eef12ccd5e3e0707e601a2ac56fed868bf48",
+          "patch_sha256": "3ed3e2fab2aef1cbdc5c2258ce836a7ecc57975aa4f08b35efbb5f893ea46f9d"
+        },
+        {
+          "filename": "tests/reports/scripts/generate_report.sh",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 2,
+          "sha": "774e8a8138eea5beb5d68fd681c277550199b521",
+          "patch_sha256": "2f7afa5b0b909251255946794acc3344f0e0ebadfbefb6584d009ee22d7ba973"
+        },
+        {
+          "filename": "tests/whitebox/scripts/run_whitebox.sh",
+          "status": "modified",
+          "additions": 37,
+          "deletions": 2,
+          "sha": "a476f7f301df014e542792983d4a8e706332e33f",
+          "patch_sha256": "431b6815ba37b9cfcda443d4ecf9d0eb700fad2f162a01d4af5a3c966f9f62e1"
+        },
+        {
+          "filename": "tests/whitebox/test_daily_challenge_router.py",
+          "status": "modified",
+          "additions": 52,
+          "deletions": 0,
+          "sha": "a3da9a3d255c9f24ef18fbe78463fd0e4db6b7ec",
+          "patch_sha256": "d72501c23dac35daf7343e3d2419620d08c653b201f2da5baafff5a5dbaa49e4"
+        },
+        {
+          "filename": "tests/whitebox/test_food_display.py",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0,
+          "sha": "56ce60935271707ad23005f5722fba0e9bab972f",
+          "patch_sha256": "4733f7512760ffb73cea89ae3b75f2923c88a72d728b049ba5d3b0a0333f636e"
+        },
+        {
+          "filename": "tests/whitebox/test_health_scoring.py",
+          "status": "added",
+          "additions": 83,
+          "deletions": 0,
+          "sha": "23128cdd523c74531104ace4e156e03f376a74bd",
+          "patch_sha256": "5666fb7c7549ce428773f8cd9044257bf2643aa7963854381afb6783713b6133"
+        },
+        {
+          "filename": "tests/whitebox/test_recommendations_router.py",
+          "status": "added",
+          "additions": 192,
+          "deletions": 0,
+          "sha": "c9fcc9ec0c2066e79df524ce1e4c5d3cedc6056e",
+          "patch_sha256": "e683be494bcdc925bf3145dfc1ee176392a53755c8d060ec23e189d7163a4ef2"
+        },
+        {
+          "filename": "tests/whitebox/test_scan_router_extended.py",
+          "status": "added",
+          "additions": 319,
+          "deletions": 0,
+          "sha": "3bfea57d2e819eaa532c68195bbcd0911ca97ae8",
+          "patch_sha256": "52ddeb6a6c9c3c0fbb645be2014cff101a6a847c81b3c068d5c2b74fbd756e76"
+        }
+      ],
+      "additions": 1741,
+      "deletions": 396,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/41",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/41/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          ".github/workflows/test-flow.yml",
+          "nutri-health-api/app/routers/scan.py",
+          "nutri-health-api/app/services/gemini.py",
+          "tests/api-deploy/README.md"
+        ]
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Revise feedback messages in daily healthy challenge",
+      "number": 35,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/35",
+      "author": "cola1917",
+      "created_at": "2026-04-25T09:35:48Z",
+      "merged_at": "2026-04-25T09:36:56Z",
+      "head_sha": "0a33ec508da07e8cd41593d78dfd2caf7363e7f8",
+      "merge_commit_sha": "0ada3ca73c5ac82c453b7bcf7578cf115ba09132",
+      "contribution_type": [
+        "content_update"
+      ],
+      "technical_summary": "Revised user-facing feedback strings in daily-challenge seed data.",
+      "files": [
+        {
+          "filename": "nutri-health-api/data/seed/daily_healthy_challenge.json",
+          "status": "modified",
+          "additions": 16,
+          "deletions": 16,
+          "sha": "c5d24ef58743c21c66abe1c6a92470aa283c9dda",
+          "patch_sha256": "acca7a19a6653c9c5149289938b21bce89dca3f5ad64891a9c7566500082708b"
+        }
+      ],
+      "additions": 16,
+      "deletions": 16,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/35",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/35/files",
+        "discussion_urls": [],
+        "reviewed_files": []
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Fix whitebox test regressions",
+      "number": 31,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/31",
+      "author": "cola1917",
+      "created_at": "2026-04-21T10:19:17Z",
+      "merged_at": "2026-04-21T10:37:10Z",
+      "head_sha": "2c10c7eeb246e348306b640abf6d0d16db499247",
+      "merge_commit_sha": "fdb7e1892da855080f82046fd312efac541d711e",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Removed the pytest-asyncio dependency from daily-challenge white-box tests using asyncio.run and aligned scan-recognition fixtures with the current contract.",
+      "files": [
+        {
+          "filename": "tests/whitebox/test_daily_challenge_router.py",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 19,
+          "sha": "98f8fb8530047337d9b4ebb86a9cd13f9aaa504a",
+          "patch_sha256": "6304993a54301061de37c80371fa241279cc818aec800d391e1de09e4cb6634e"
+        },
+        {
+          "filename": "tests/whitebox/test_scan_router.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "sha": "900b5728e05a7ae487c14bb65e9ca8e9ebecad53",
+          "patch_sha256": "2d90179aa2e6835a08f4b085ba409e5fb219fbfb80e3d1e4653b8e3e93d7a408"
+        }
+      ],
+      "additions": 22,
+      "deletions": 22,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/31",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/31/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "tests/whitebox/test_daily_challenge_router.py",
+          "tests/whitebox/test_scan_router.py"
+        ]
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Add daily healthy challenge API",
+      "number": 30,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/30",
+      "author": "cola1917",
+      "created_at": "2026-04-20T09:59:59Z",
+      "merged_at": "2026-04-20T10:16:48Z",
+      "head_sha": "0b2c2690ecae10076ac4a942095d88ca181ce0f3",
+      "merge_commit_sha": "2e068999dfd213ae47cdbce42111fcc038fee735",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added a seeded daily-challenge database model, selection/completion API routes, startup initialization, and white-box/integration tests.",
+      "files": [
+        {
+          "filename": "DATA_DICTIONARY.md",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 8,
+          "sha": "b39d51133995bc236da7364c80ce7954d2edbf0e",
+          "patch_sha256": "24df6519999d6373bf0f775b1820628fea1e6200c912304c8a2d5b3c8ea48766"
+        },
+        {
+          "filename": "nutri-health-api/README.md",
+          "status": "modified",
+          "additions": 51,
+          "deletions": 0,
+          "sha": "a0004d7fe3e5b6839eb76b1eca5384a063764f75",
+          "patch_sha256": "6a8dd00035b556a9fa5859d7a12bef48f530a3b9b00937dec69cd715c005ec87"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/sql/check_seed_counts.sql",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "903bcffd5df8594b331f2e99fb765fe41ed2a29a",
+          "patch_sha256": "973aac0538059f8602b81d19a2d0aefd292c105d1714319d28b8e807ff363725"
+        },
+        {
+          "filename": "nutri-health-api/app/main.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "sha": "e9b379da179fc4cd2a3b83370126dfd9770be32d",
+          "patch_sha256": "47fb5e3dd57298a0693e59e86a116e00f1a6765d5c0af09dfbfe22ce1cdc05ae"
+        },
+        {
+          "filename": "nutri-health-api/app/models/__init__.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "sha": "e685117f2fc972b631018acaa028d53bad7885bd",
+          "patch_sha256": "e4d0ae96aa5c39137d45a71a7097587e2fb1da14ba165a6c562a8f27a0f646c6"
+        },
+        {
+          "filename": "nutri-health-api/app/models/daily_challenge.py",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "sha": "e9ac117b371db6ee675921ef61cd369264e0f64d",
+          "patch_sha256": "164f5e77f1a50f6acedbff8a66e9ecfaedf9f59c2b246d6be38ed4f1c38de47b"
+        },
+        {
+          "filename": "nutri-health-api/app/routers/daily_challenge.py",
+          "status": "added",
+          "additions": 71,
+          "deletions": 0,
+          "sha": "ec9940154adfa1307af2b2c8a655fbd05e75d652",
+          "patch_sha256": "5d3a740718267113a40a301baa5ec57147e5aff591b087f220547dcaa0aeba1a"
+        },
+        {
+          "filename": "nutri-health-api/app/schemas/daily_challenge.py",
+          "status": "added",
+          "additions": 39,
+          "deletions": 0,
+          "sha": "039d617cf81cae1268e771e900b38b11ba2eab57",
+          "patch_sha256": "a2ce83ba55e1f63168bb331ac4e860a963098f019c8820bc5a1d44869241bfcb"
+        },
+        {
+          "filename": "nutri-health-api/app/services/seed.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "sha": "f92f987533f1ac931d53fa6bae90912fc3e7975b",
+          "patch_sha256": "4d85fd575387b23fc6e525ef597faeea2f1b1faa243a6cf1272977bfeeac5af8"
+        },
+        {
+          "filename": "nutri-health-api/data/README-seed-workflow.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "sha": "45f935b91ba4ae0be6a44d8202b014d9f8bf5a75",
+          "patch_sha256": "98059db750d70dab31d3649b488f0477380a860a69e130746de5f3eb14a940cf"
+        },
+        {
+          "filename": "nutri-health-api/data/seed/daily_healthy_challenge.json",
+          "status": "added",
+          "additions": 98,
+          "deletions": 0,
+          "sha": "356f5bae254241ab62f218b539aec2319aff4e42",
+          "patch_sha256": "40a7238801b2823fe2f0beb6cf515da12bde66eecf8aa939005be03292841025"
+        },
+        {
+          "filename": "tests/api-deploy/README.md",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "2ae33a04aef86189d428294499fa09493441ab4a",
+          "patch_sha256": "47593f06154e496660282dc320cf4f6d8ab5e85f30b0b6b3cf3f53048ce9fc46"
+        },
+        {
+          "filename": "tests/api-deploy/test_daily_challenge_api.py",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0,
+          "sha": "3b82c216c40c8b050b324aac42b7cedb269e982f",
+          "patch_sha256": "f59bde73aeb59b824e2325d9074d380100d48813e1fb2c9f6ee0b4e90560ba6e"
+        },
+        {
+          "filename": "tests/whitebox/test_daily_challenge_router.py",
+          "status": "added",
+          "additions": 118,
+          "deletions": 0,
+          "sha": "4121e4e17764cc3f5a1219ae371aa8022fa81918",
+          "patch_sha256": "e2931864eac299849c0b4cf6c4bdba56a53dbae34ec1b3c30bf5c99ae32b3a37"
+        },
+        {
+          "filename": "tests/whitebox/test_seed_service.py",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 0,
+          "sha": "01a2cd8cf4423792f46f8933d985b2b77962b513",
+          "patch_sha256": "7bd1835dfaf1ef8077833b5008bee217f67b2ede58d8bb6d1699c3166b292788"
+        }
+      ],
+      "additions": 530,
+      "deletions": 9,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/30",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/30/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "DATA_DICTIONARY.md",
+          "nutri-health-api/README.md",
+          "nutri-health-api/app/etl/sql/check_seed_counts.sql",
+          "nutri-health-api/app/main.py"
+        ]
+      }
+    },
+    {
+      "repository": "zwan0616/FIT5120_TM11",
+      "repository_url": "https://github.com/zwan0616/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "ci: organize test flow with smoke/regression suites and reporting",
+      "number": 27,
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/27",
+      "author": "cola1917",
+      "created_at": "2026-04-16T13:33:28Z",
+      "merged_at": "2026-04-18T09:48:10Z",
+      "head_sha": "4caafc809f87ec86a1b22e581a3f6e08828d1126",
+      "merge_commit_sha": "9d5eb6b3e2037077b745180302c3ce01c5b9110e",
+      "contribution_type": [
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Organized CI into white-box, API smoke, and API regression jobs, with coverage/JUnit artifacts and consolidated Markdown reports.",
+      "files": [
+        {
+          "filename": ".github/workflows/test-flow.yml",
+          "status": "added",
+          "additions": 229,
+          "deletions": 0,
+          "sha": "a97b5498977c55007d32a17571ae241c89a172a8",
+          "patch_sha256": "03bc6de38a1d6aadb91f2407bd5fb8c44604bef80a46f4b72fe39ffd554dcf1e"
+        },
+        {
+          "filename": "tests/README.md",
+          "status": "added",
+          "additions": 7,
+          "deletions": 0,
+          "sha": "4edd8bc588c7e298bfc5a3a0eddc0fcb11c71001",
+          "patch_sha256": "e4ac2aa777b1f143f2f1230924336a7593092dbe49dabeaf00bf15d4370d5244"
+        },
+        {
+          "filename": "tests/api-deploy/README.md",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "sha": "a1cbd4a530d1a2711bd114f46c134260b4360c3f",
+          "patch_sha256": "d666a2a040e53b9bf884850f931ce553372e500772e3879e23d9ad14125f3058"
+        },
+        {
+          "filename": "tests/api-deploy/scripts/api_regression_test.sh",
+          "status": "added",
+          "additions": 380,
+          "deletions": 0,
+          "sha": "351e36273df6eea706c0f9dde539ebb31916598d",
+          "patch_sha256": "ad05d91e4d52c9b299435942729bed343b9b7d973ff649fbe889ba541f5381c0"
+        },
+        {
+          "filename": "tests/api-deploy/scripts/api_smoke_test.sh",
+          "status": "added",
+          "additions": 354,
+          "deletions": 0,
+          "sha": "4a986d4d6a369baa533a32e1d009c8a514844f8e",
+          "patch_sha256": "8e7533819169702d05d0c1df9bdeee5f4171b1b968d3387fbe0251b99d3fe61f"
+        },
+        {
+          "filename": "tests/reports/README.md",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0,
+          "sha": "e792f2a476afdc6d94d3568f7eff635b38f90427",
+          "patch_sha256": "bf6381d0b1566831b2fe85ef8c0a84a00b35a961ce129a4e8c430daf02956b7c"
+        },
+        {
+          "filename": "tests/reports/history/2026-04-16_09-00-55.md",
+          "status": "added",
+          "additions": 48,
+          "deletions": 0,
+          "sha": "883949fe5d04472b42e0ad80e292720e7883ecf9",
+          "patch_sha256": "c1d2a114c42fdc0e7538a4a57df1b7740e0c08fb9126967a2cc04cfea9234e5d"
+        },
+        {
+          "filename": "tests/reports/history/2026-04-16_09-10-52.md",
+          "status": "added",
+          "additions": 48,
+          "deletions": 0,
+          "sha": "7ab6847e9299fb1d0658c62daea63e745734dca0",
+          "patch_sha256": "b0788e59c817e5c1297a9bc8ff9ae49d216057857711b6a185c601eacfee38e4"
+        },
+        {
+          "filename": "tests/reports/history/2026-04-16_09-12-28.md",
+          "status": "added",
+          "additions": 48,
+          "deletions": 0,
+          "sha": "da7da4479bd5d18d5b887442f14a84b663d7705f",
+          "patch_sha256": "466161feaae441f5c947e053ac1929dd0d5a96bde92746a031024c073d85c178"
+        },
+        {
+          "filename": "tests/reports/scripts/generate_report.sh",
+          "status": "added",
+          "additions": 156,
+          "deletions": 0,
+          "sha": "e743d6554379651de90028dae136d9e5926f8083",
+          "patch_sha256": "cf9cf4ef8551c556b7e761f6d9928ef60079f6c7ae6d47c80ea3717b2e34baff"
+        },
+        {
+          "filename": "tests/reports/templates/report_template.md",
+          "status": "added",
+          "additions": 48,
+          "deletions": 0,
+          "sha": "a6cb8123f70f74a00f754c65452b4055ce3f702e",
+          "patch_sha256": "f328f5539b19c3c724e36a4b5ee1f851c44670deee34bef7d9cd8ab55cd7d2d9"
+        },
+        {
+          "filename": "tests/whitebox/README.md",
+          "status": "added",
+          "additions": 7,
+          "deletions": 0,
+          "sha": "20216b0512e2fac180112699bf3cd15087de03c4",
+          "patch_sha256": "8db5916c5efe93f3909be23146e6519556f85db644be72c0e79e03281cf449af"
+        },
+        {
+          "filename": "tests/whitebox/scripts/run_whitebox.sh",
+          "status": "added",
+          "additions": 58,
+          "deletions": 0,
+          "sha": "2c7616d51b2008f69d478d62f9b9a55c86f83c35",
+          "patch_sha256": "67710078e225ac591f1c7d81a852db7f7cea285af1aeea328c60cbb61c85a957"
+        },
+        {
+          "filename": "tests/whitebox/test_alternative_rules.py",
+          "status": "added",
+          "additions": 33,
+          "deletions": 0,
+          "sha": "695d3afb3c062f76ac9f4a59961b58a61d9138e1",
+          "patch_sha256": "c1f77ba1a1e7cde728f0ce3ed5dce5ac712e6b10ca7c59c0c8175db983e11a17"
+        },
+        {
+          "filename": "tests/whitebox/test_auth.py",
+          "status": "added",
+          "additions": 67,
+          "deletions": 0,
+          "sha": "076b92a45f3d938b02e0f16fe9c6c8d9c7a05620",
+          "patch_sha256": "73170edec0ae62ad00a7f191d95ae921a208f3f83727b954a4bd02bd9b9bab8e"
+        },
+        {
+          "filename": "tests/whitebox/test_auth_router.py",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0,
+          "sha": "72b64d20590907796ca66ea9cace6128f0e4a288",
+          "patch_sha256": "cc60ff9f7bf46467dc1d8564cf549485db83c7a58c9635ec94409995093f9300"
+        },
+        {
+          "filename": "tests/whitebox/test_cache_service.py",
+          "status": "added",
+          "additions": 106,
+          "deletions": 0,
+          "sha": "70865d430ae665f74687b1a79663b6ef1d49e73e",
+          "patch_sha256": "c51677f3c5f37bb86c70bc623d99a0e803b2b00ea3a76c4629c338ea0e830dc8"
+        },
+        {
+          "filename": "tests/whitebox/test_scan_router.py",
+          "status": "added",
+          "additions": 54,
+          "deletions": 0,
+          "sha": "8a3a4c0e66383e7aa7cf6e25af3d182838f4e1f3",
+          "patch_sha256": "93769f54efb1300b946b784122a654f8299690b915932b249028aa44dd0991a4"
+        },
+        {
+          "filename": "tests/whitebox/test_seed_service.py",
+          "status": "added",
+          "additions": 99,
+          "deletions": 0,
+          "sha": "c983249acfee1a890a57c47431683ba8ceb7883a",
+          "patch_sha256": "b4c95c78d6ad8aba192563a8dcc494306a8b4312f5646f441665669b48ad1463"
+        },
+        {
+          "filename": "tests/whitebox/test_stories_router.py",
+          "status": "added",
+          "additions": 69,
+          "deletions": 0,
+          "sha": "05572cca3a51d7a0e756aba81feae6387b23bafc",
+          "patch_sha256": "a965cc3d7742030264e72598ff04274c417f2b02b6ca4c7cdfd0c23f6df8316a"
+        }
+      ],
+      "additions": 1876,
+      "deletions": 0,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/zwan0616/FIT5120_TM11/pulls/27",
+        "diff_url": "https://github.com/zwan0616/FIT5120_TM11/pull/27/files",
+        "discussion_urls": [
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640531",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640604",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640650",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640679",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640718",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640762",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640794",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640820",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3093640860",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3094097868",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065336",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065357",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065375",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065387",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065394",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065401",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065419",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065432",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065448",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065455",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065466",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#discussion_r3097065479",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#issuecomment-4260480937",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#issuecomment-4260632156",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#issuecomment-4264287507",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#pullrequestreview-4121350718",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#pullrequestreview-4121858704",
+          "https://github.com/zwan0616/FIT5120_TM11/pull/27#pullrequestreview-4125146827"
+        ],
+        "reviewed_files": [
+          ".github/workflows/test-flow.yml",
+          "tests/README.md",
+          "tests/api-deploy/README.md",
+          "tests/api-deploy/scripts/api_regression_test.sh"
+        ]
+      }
+    },
+    {
+      "repository": "yipingho/FIT5120_TM11",
+      "repository_url": "https://github.com/yipingho/FIT5120_TM11",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "other_public_collaboration",
+      "title": "Add CN2026 ETL seed pipeline and anomaly reporting",
+      "number": 1,
+      "url": "https://github.com/yipingho/FIT5120_TM11/pull/1",
+      "author": "cola1917",
+      "created_at": "2026-04-02T13:17:19Z",
+      "merged_at": "2026-04-03T13:41:57Z",
+      "head_sha": "400effb0fab4d092839b068f1f74a47a05aa0852",
+      "merge_commit_sha": "c0aa03784b62c1405c1ef572d61e51f5fde67f65",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added PostgreSQL catalog models, raw-to-seed ETL, configurable nutrition rules, seed loading, consistency SQL, and anomaly reporting with generated seed/staging artifacts.",
+      "files": [
+        {
+          "filename": "DATA_DICTIONARY.md",
+          "status": "added",
+          "additions": 404,
+          "deletions": 0,
+          "sha": "1350a2a04c1d1fca62e07de4f13447b5f7d2e003",
+          "patch_sha256": "3dd3b2390f4813d4bf6b67ae2e384ef62834ef31b1e3c77bb2adfd07306d680b"
+        },
+        {
+          "filename": "nutri-health-api/README.md",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 3,
+          "sha": "d0df15281b5369592a667e136c38762015d24885",
+          "patch_sha256": "b6b1a079def38424081e72cb877ae86325a2a0fb9bdce6d4ee13d781ecae1802"
+        },
+        {
+          "filename": "nutri-health-api/app/database.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 0,
+          "sha": "376cc71cd4c1cf2d49c0815bb45894557a962b8c",
+          "patch_sha256": "ca1d82f59fd83edac62de5d5f4bd3cddbd0d571d9d4deb78da74bd43c62e6b3a"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/__init__.py",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "2e33de2c0506aa1cc554aa7df5fa24e825096a42",
+          "patch_sha256": "8e1829466d3785996f51bf3861ffd99530cc27bc3830d770f04d3a7421962986"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/build_seed_payload.py",
+          "status": "added",
+          "additions": 401,
+          "deletions": 0,
+          "sha": "fa4b1fd9d6f5bd4a7b5574dc450db72f9f316847",
+          "patch_sha256": "761e6696088c0f2a2ac2b34b1fa683477b70a08094e1c1220c866131961f1fac"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/generate_anomaly_report.py",
+          "status": "added",
+          "additions": 142,
+          "deletions": 0,
+          "sha": "d0ec1250cb70bae0f8514548b9799882e7efee22",
+          "patch_sha256": "56ea7fa990c93b19b2a8dfe94dedf5605795130d5f09eee544b49f38542f6f6e"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/seed_db.py",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0,
+          "sha": "2aec747b5f19d705890dd01e951ef4b169a90fd2",
+          "patch_sha256": "4ddd50372aeac428d721c8c32a450df00833bef6cec7efc71c97789c8a0e1798"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/sql/check_seed_counts.sql",
+          "status": "added",
+          "additions": 75,
+          "deletions": 0,
+          "sha": "9f887c48d6958e6abeebd188f63899b4ffdaa4df",
+          "patch_sha256": "c63398af3a1de5dff20d2c4de7931853a8da058a08ab037dd6e4f8f5c3f12d07"
+        },
+        {
+          "filename": "nutri-health-api/app/etl/sql/query_nutrition_by_cn_code.sql",
+          "status": "added",
+          "additions": 76,
+          "deletions": 0,
+          "sha": "9de18055f4748096187837cef8d87765b067b1fe",
+          "patch_sha256": "7d0c352547bdb82d0e6e3cf69025c2083aecba242ba0d8c894f07fabf6a381e7"
+        },
+        {
+          "filename": "nutri-health-api/app/main.py",
+          "status": "modified",
+          "additions": 23,
+          "deletions": 0,
+          "sha": "7246676b9ed8b68673ef3cf37467590c869984e1",
+          "patch_sha256": "fa3db05a81b0d3a11d140f50139ec8d58f7ebd3ed69a149e327f489fa58ec2c9"
+        },
+        {
+          "filename": "nutri-health-api/app/models/__init__.py",
+          "status": "modified",
+          "additions": 25,
+          "deletions": 0,
+          "sha": "e7d8bfae994074e742f27ff110e2d0edf315f4f5",
+          "patch_sha256": "78c371afd5baf7f5bf7d1aa3da82eda9f61f16d585e42259c472842805ff3976"
+        },
+        {
+          "filename": "nutri-health-api/app/models/cn_food.py",
+          "status": "added",
+          "additions": 120,
+          "deletions": 0,
+          "sha": "1a9498c6f7b1bbccd8836778eabbc5bb98585b76",
+          "patch_sha256": "428069313e8690a3cea0a347a979342653fbc0030b2ba4c578d234103c618313"
+        },
+        {
+          "filename": "nutri-health-api/app/services/seed.py",
+          "status": "added",
+          "additions": 148,
+          "deletions": 0,
+          "sha": "22148abeb77568c187def5ff4e662e35697356d7",
+          "patch_sha256": "b94a92957a2e1ed65547f5d642b8923573471a99671bb547b6a971a7c126c333"
+        },
+        {
+          "filename": "nutri-health-api/data/README-seed-workflow.md",
+          "status": "added",
+          "additions": 73,
+          "deletions": 0,
+          "sha": "797d749e2034cb2ee3f7b6c5771d367d9160798c",
+          "patch_sha256": "af950643c26df27b096534796bed956775376f6e8ea5a5e4e137fb0a1cfd93b4"
+        },
+        {
+          "filename": "nutri-health-api/data/mapping/nutrition_rules.json",
+          "status": "added",
+          "additions": 42,
+          "deletions": 0,
+          "sha": "d18e056ff669f258d28aa1656249c53e569eae4c",
+          "patch_sha256": "e661ca937555a33186138c6c4df897d6233c29d0bef811c2acf39a06ebd963f2"
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_CTGNME.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "2edabf648a679645551dbbebf6cf03531858769c",
+          "patch_sha256": "0098b53bcdb12679ea0bc439276366bd60b60a13224dd6ae4faceb196eebe85d"
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_FDES.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "6bb8efe5fb8a02de04cdb7fa98684f8bcc5f1cf7",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_GPCNME.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "3f8c67f4bedc88bd73aaaf1444d4e05bf1b37006",
+          "patch_sha256": "fff62bd8dd146bd3bc03e473b2a994b7391a910cec880dd68d3d38019375ef45"
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_NUTDES.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "87643b0cdfa3879872b1723d3d144b526c144042",
+          "patch_sha256": "bb7dc25d1ce3ad66a65bb7d3dcd9bc4081a147cecd9ed453b9de103400c9df96"
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_NUTVAL.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "898d957d8bd11c90147e7d7ddd065ff31e98481c",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/raw/CN.2026.03_WGHT.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "d15b19bb32eaf00d90d86c52dff42b8a692d23a5",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_ctgnme.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "4912191450bf11a2a6ea3350adce924cebf88bad",
+          "patch_sha256": "d863b7a59c5d9a715aec7898433e3b7bed2657c9076ad6a2a995508d15e59126"
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_fdes.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "8327e75510ac1e10a6e2d6dad85dcfdf0badcd2e",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_food_tags.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "cdf985eafc1cf108cbbefa878292d9c3d4ddd9a1",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_gpcnme.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "da0ab48f685e68491340dc5d5d071c494194e6b9",
+          "patch_sha256": "77a5cc135e74a1d34fd0c060674dce3e990179ab0509272f2a0c0b05799935fb"
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_nutdes.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "94306dea339c86706bad25af65c15380876f01dc",
+          "patch_sha256": "ff2964224c12ba0ca2b3d3118d461b6e9fa2455a982291a4c39bc8dba0b4612b"
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_nutval.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "bfc3ea637d08bbeb6f9b3d9c35640b24702127f2",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/seed/cn_wght.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "a53acdcc4b4f655a7235e7df2543fa3650a108ea",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/seed/remote_alternative.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "sha": "c16d9143f8d23b8e6b0cb1ef6d05ad66c872d06b",
+          "patch_sha256": null
+        },
+        {
+          "filename": "nutri-health-api/data/staging/anomaly_report.json",
+          "status": "added",
+          "additions": 277,
+          "deletions": 0,
+          "sha": "b13a82d68f619ced18f95456aa37ce0e84598e07",
+          "patch_sha256": "4202c58322a2f649c41575aaf831db2831b6303a1de0335bf701202e2c0ac0c1"
+        },
+        {
+          "filename": "nutri-health-api/data/staging/anomaly_report.md",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0,
+          "sha": "3b0b1d418149bf151602290adee8a919b3ba9354",
+          "patch_sha256": "ccdeb27dc6b2bf0eddccab0418cb9bafcf9adb137c8223f79bd46339aa1f231d"
+        },
+        {
+          "filename": "nutri-health-api/data/staging/staging_summary.json",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "sha": "d2c23f3e1f5c50495e3a83918f6beb39aa739379",
+          "patch_sha256": "5ada4f0e0ddf75bc4f473c400045b6e45fd922ca148053b2ef06073292c70a4e"
+        }
+      ],
+      "additions": 1898,
+      "deletions": 3,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/yipingho/FIT5120_TM11/pulls/1",
+        "diff_url": "https://github.com/yipingho/FIT5120_TM11/pull/1/files",
+        "discussion_urls": [
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186136",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186198",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186211",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186224",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186247",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186269",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#discussion_r3028186291",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#issuecomment-4178069600",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#issuecomment-4178096381",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#issuecomment-4183200266",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#issuecomment-4183203676",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#issuecomment-4243624162",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#pullrequestreview-4050814373",
+          "https://github.com/yipingho/FIT5120_TM11/pull/1#pullrequestreview-4055732241"
+        ],
+        "reviewed_files": [
+          "DATA_DICTIONARY.md",
+          "nutri-health-api/README.md",
+          "nutri-health-api/app/database.py",
+          "nutri-health-api/app/etl/__init__.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "refactor(final): unify CLI, module boundaries, config split and README",
+      "number": 11,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/11",
+      "author": "cola1917",
+      "created_at": "2026-03-16T08:13:36Z",
+      "merged_at": "2026-03-16T08:13:52Z",
+      "head_sha": "0c47c59ebf66ef9394299b10cae71d1a90c81f92",
+      "merge_commit_sha": "0ffa14176c29ef9d7225001adab03742c50b96cb",
+      "contribution_type": [
+        "refactor"
+      ],
+      "technical_summary": "Unified evaluation, mining, simulation, and visualization entry points under one CLI; reorganized module boundaries, split configurations, and updated imports/tests/documentation.",
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 108,
+          "deletions": 222,
+          "sha": "51e9eaba6f131d04cecaf5dbca12bdf26a084578",
+          "patch_sha256": "3695e42e803c6ee85160ee1c1198898527673091f6665aec9dcd9944fa52968f"
+        },
+        {
+          "filename": "configs/eval.yaml",
+          "status": "modified",
+          "additions": 22,
+          "deletions": 0,
+          "sha": "1737de1d9b9868c14e7816ba102223cae4adec55",
+          "patch_sha256": "6c2031c0a64cb9613a4037084bdc4b369755fa5acf5ce7fb2884411b1004c280"
+        },
+        {
+          "filename": "configs/sim.yaml",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "sha": "9d345b0284ab7abd14212cdd2d4c5cc8444d791a",
+          "patch_sha256": "4ab0506198f3f415d7d2825cd3de92dad8266e7d9aba407b8259c3d72f63e37a"
+        },
+        {
+          "filename": "failure_mining/__init__.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 8,
+          "sha": "1def287c1aa82e83d11ae832912a7696efc89502",
+          "patch_sha256": "1cb7ee7ccae567fe5b9ac078f7b77f661edc47d769b84d731a31a6a51ede4b92"
+        },
+        {
+          "filename": "mining/__init__.py",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "sha": "a250f8374c3cc9f5a82612cc38a572df55f46b55",
+          "patch_sha256": "e8bdfc7fd5391a741cbbbbec1a984a9f1ab97aa2c085b0135877885c3f616c97"
+        },
+        {
+          "filename": "mining/error_aggregation.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "29c75e2c9f7ecf89cc6e5d3868a67d567228d966",
+          "patch_sha256": null
+        },
+        {
+          "filename": "mining/pipeline.py",
+          "status": "renamed",
+          "additions": 4,
+          "deletions": 4,
+          "sha": "a87c8aaef39d3c1217ee98ff51d051db9ed6cb12",
+          "patch_sha256": "e52487f0cb9abf1445c544c7e44be61584bb8e2669dda41e5b793e80ae2f62b7"
+        },
+        {
+          "filename": "mining/rank_frames.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "6aa663cd86d7ab4c1c5e04660e49cd51167b5f74",
+          "patch_sha256": null
+        },
+        {
+          "filename": "mining/rank_scenes.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "ec78d9d6a654bbbf81e3b54f83c87572e94ddf14",
+          "patch_sha256": null
+        },
+        {
+          "filename": "scenario/__init__.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 11,
+          "sha": "3e863fffed971a8d8765d05ef5e4cc137ac613f3",
+          "patch_sha256": "c34d8ca7755d173dcb499941f7c3d32f7e973e656fc20192e8e8815127cb5204"
+        },
+        {
+          "filename": "scripts/adeval.py",
+          "status": "added",
+          "additions": 493,
+          "deletions": 0,
+          "sha": "0df99a842d85ffe5dec949e9fbe12be1804cbd16",
+          "patch_sha256": "d397d37e46390b1dc32b343196ed8e7bb405d1d0b8fbf867afcd9a7a78f3b10d"
+        },
+        {
+          "filename": "scripts/run_esmini_smoke.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "5d11d8f81ce3b42860f1b9c05b082fa99ec74e84",
+          "patch_sha256": "139ae8f1ff24c2a77eef9abf93120943b705bff3dd3193a5ca8c3817275cffff"
+        },
+        {
+          "filename": "scripts/run_perception_eval.py",
+          "status": "modified",
+          "additions": 64,
+          "deletions": 44,
+          "sha": "ca01a788735693cb3213a9efad2484628acc2f41",
+          "patch_sha256": "8789270f992fa914adc95bac7c419f782f7dc22523ebb2740b5a0dcfd8609876"
+        },
+        {
+          "filename": "scripts/validate_xosc.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "0ec60bd254928901c7676342baf3c31207a2793a",
+          "patch_sha256": "88fccefa2bf0ae3d436f45aeeca9728b9ef5c90938d68910b95d505e582da30c"
+        },
+        {
+          "filename": "simulation/__init__.py",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "sha": "eb18a2d2700b7cece24b93ec932cac311c71c03e",
+          "patch_sha256": "c460eca4e648a226612cb8dacee70096e09285c7be12e58700ebbf499b2ad2e4"
+        },
+        {
+          "filename": "simulation/export_openscenario.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "a4682ac93d84bdc9728b049297d01a8863810ea1",
+          "patch_sha256": null
+        },
+        {
+          "filename": "simulation/validation.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "cddd12eb7e335f286ce2b33a7c19bcc527e27a77",
+          "patch_sha256": null
+        },
+        {
+          "filename": "simulator_export/__init__.py",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 6,
+          "sha": "f8ddf5fc4d6894351a7ef85f60ec2020b628607d",
+          "patch_sha256": "f7752f92d2287d22933c3c45b442e807de7ad4984599e62176b85ccccc44a4b5"
+        },
+        {
+          "filename": "tests/unit/test_failure_mining_v1.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "8a528cd838b2714c0a8cec5dfc47971681be37c3",
+          "patch_sha256": "5d3f2a60303fed21f098ea9b2330403d280be22d49e17d4952a3c4ea86b9ccac"
+        },
+        {
+          "filename": "tests/unit/test_phase2_tools.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3,
+          "sha": "a5701e17655369a6cd5822214ee74b2efd869b13",
+          "patch_sha256": "63ede66d384315896d98ca47c8abf0027a4fc607ad5b370e81f63485f18b2794"
+        },
+        {
+          "filename": "tests/unit/test_xosc_validation_tools.py",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1,
+          "sha": "bce77235c59c8f7cac285b6c6625f5b4627113e9",
+          "patch_sha256": "5957f8dbdccbd3abd1266b6cc15ef96803dcabc02b687867f565c75aa3e86fd2"
+        },
+        {
+          "filename": "visualization/__init__.py",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "sha": "261ad96afd37b70671d2311a5cd8dfbe870f2ff2",
+          "patch_sha256": "988609649963a7af54ea6d09866201563fb7cd53d3bffd2b71f0e9a090f75f85"
+        },
+        {
+          "filename": "visualization/map_overlay.py",
+          "status": "renamed",
+          "additions": 1,
+          "deletions": 1,
+          "sha": "c47f93f3f7278804f5fe4620eade456bd363c62a",
+          "patch_sha256": "09553ba756d5bd88e8652f793f63713196f930a048005b0db685be9aa1fc587c"
+        },
+        {
+          "filename": "visualization/replay_scene.py",
+          "status": "renamed",
+          "additions": 2,
+          "deletions": 2,
+          "sha": "68af664954a952ab5325ee9f85ad4b94b6eeebe1",
+          "patch_sha256": "d562be06842885756dbf7524d53e5294a696655e5869f4383946d1437342e73e"
+        },
+        {
+          "filename": "visualization/snapshot_schema.py",
+          "status": "renamed",
+          "additions": 0,
+          "deletions": 0,
+          "sha": "30340f4daa451bd0eca284e9afd40759e631b11e",
+          "patch_sha256": null
+        }
+      ],
+      "additions": 753,
+      "deletions": 308,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/11",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/11/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "README.md",
+          "configs/eval.yaml",
+          "configs/sim.yaml",
+          "failure_mining/__init__.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "ci(sim): add xosc validation workflow with optional esmini smoke",
+      "number": 10,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/10",
+      "author": "cola1917",
+      "created_at": "2026-03-16T04:48:11Z",
+      "merged_at": "2026-03-16T04:48:13Z",
+      "head_sha": "1768a0e180e08f2bfa1a6c3c373f3c4004079a50",
+      "merge_commit_sha": "c27b83c41ebadc29aad099a8a395f7ffd399e017",
+      "contribution_type": [
+        "engineering_enhancement"
+      ],
+      "technical_summary": "Added simulation-validation CI with default XOSC checks, opt-in manual esmini smoke execution, report artifacts, and temporary-file ignore rules.",
+      "files": [
+        {
+          "filename": ".github/workflows/sim-validation.yml",
+          "status": "added",
+          "additions": 177,
+          "deletions": 0,
+          "sha": "5c8837f470a701aa1d182743956f9a48bd6b8bef",
+          "patch_sha256": "4352ebe85e058a1006b674ae4bad2d28663ba7b6732b7baa7447b319d72a4224"
+        },
+        {
+          "filename": ".gitignore",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 1,
+          "sha": "9c1aa5e313f56fece5da38f4e1736a30867c11cc",
+          "patch_sha256": "b7685b513193287bf785bb5915e26611f283b6f61c8a3722b9daada29638adf9"
+        }
+      ],
+      "additions": 181,
+      "deletions": 1,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/10",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/10/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          ".github/workflows/sim-validation.yml",
+          ".gitignore"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "feat(sim): add xosc validation and esmini smoke tooling",
+      "number": 9,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/9",
+      "author": "cola1917",
+      "created_at": "2026-03-16T04:39:10Z",
+      "merged_at": "2026-03-16T04:39:11Z",
+      "head_sha": "0c22ba0d7f19fa872808e9f352d2fe96ac6c3f1e",
+      "merge_commit_sha": "df2ce191d099d827627ca74b880d61d2045aa9d5",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added OpenSCENARIO XML/semantic and optional XSD validation plus a batch esmini smoke runner with timeout/dry-run reports and unit tests.",
+      "files": [
+        {
+          "filename": "scripts/run_esmini_smoke.py",
+          "status": "added",
+          "additions": 128,
+          "deletions": 0,
+          "sha": "dee327cfc1d5b693e0261a71416a96452db919ee",
+          "patch_sha256": "f6ddcc731968333f6df0f99d53919b0850a1f17bfcedd49f52aff523e6691782"
+        },
+        {
+          "filename": "scripts/validate_xosc.py",
+          "status": "added",
+          "additions": 71,
+          "deletions": 0,
+          "sha": "128724e7f7f8d4ac1b1a01d5bae21cb8d6f63586",
+          "patch_sha256": "83fc21b4e3335f85fbe7d48b3eca4e22c2eded4ce74f7eff529f5e48db54401d"
+        },
+        {
+          "filename": "simulator_export/__init__.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 1,
+          "sha": "f8ddf5fc4d6894351a7ef85f60ec2020b628607d",
+          "patch_sha256": "c1171c884eafe9115b6027df07db2993fae1ec3519cb2efc4868e60cddb84d23"
+        },
+        {
+          "filename": "simulator_export/validation.py",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0,
+          "sha": "cddd12eb7e335f286ce2b33a7c19bcc527e27a77",
+          "patch_sha256": "e9633b49f0298751b66855603d5fd9ca159f5ca137f23ae915f0bf308c1f82ec"
+        },
+        {
+          "filename": "tests/unit/test_xosc_validation_tools.py",
+          "status": "added",
+          "additions": 82,
+          "deletions": 0,
+          "sha": "8144c8c37237831fcd1e9c75aa11f73fcacbe150",
+          "patch_sha256": "32f79a160743801baf0abe46eb9ce4b4df3c36c7bfc5c134ce3ee207e22c266f"
+        }
+      ],
+      "additions": 432,
+      "deletions": 1,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/9",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/9/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "scripts/run_esmini_smoke.py",
+          "scripts/validate_xosc.py",
+          "simulator_export/__init__.py",
+          "simulator_export/validation.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "fix: include location metadata in failure-mining snapshots",
+      "number": 8,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/8",
+      "author": "cola1917",
+      "created_at": "2026-03-16T03:11:34Z",
+      "merged_at": "2026-03-16T03:12:44Z",
+      "head_sha": "0f18035a430de8bc08605cb07e2aee81d56cf3c8",
+      "merge_commit_sha": "f50f26da040a790ac7da00c5620bc8df99805815",
+      "contribution_type": [
+        "bug_fix"
+      ],
+      "technical_summary": "Propagated map-location metadata into failure-mining snapshots so replay can select the appropriate map.",
+      "files": [
+        {
+          "filename": "failure_mining/pipeline.py",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "sha": "59ea71bfd1059dba3638cea9c367c6cc31ad36d6",
+          "patch_sha256": "2387007f84b65780a396989eacd0c49cd4aea6fd7048ee572ac7a0a433971216"
+        }
+      ],
+      "additions": 3,
+      "deletions": 1,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/8",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/8/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "failure_mining/pipeline.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "feat(v2): scenario replay and map overlay (GIF export + lane/drivable-area overlay)",
+      "number": 7,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/7",
+      "author": "cola1917",
+      "created_at": "2026-03-16T03:00:22Z",
+      "merged_at": "2026-03-16T03:01:53Z",
+      "head_sha": "62b963f91ff6f64cecac2033d16b0ef6acfa278f",
+      "merge_commit_sha": "0baecf4e043ba6c945b8049ac80ddb4ced589b4f",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Extended replay integration with GIF export options, Pillow-based GIF handling, progress reporting, and export tests; the underlying map loader was introduced separately in #6.",
+      "files": [
+        {
+          "filename": "scripts/run_perception_eval.py",
+          "status": "modified",
+          "additions": 17,
+          "deletions": 0,
+          "sha": "1af7751e965e3f15dd414b712f2251ce91534784",
+          "patch_sha256": "1af88a23e97106153dfcf2428e1a4f1c54533d75e32fe5b72ea2afd0ad1d25f9"
+        },
+        {
+          "filename": "tests/unit/test_phase2_tools.py",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 1,
+          "sha": "4488bb84e4bda950493cb7f462d0a02f304f68a0",
+          "patch_sha256": "02b42dbaf89b5c53197e2b7ff934db3ed6a49b9a9bca4b5d88518708328abdc6"
+        },
+        {
+          "filename": "tools/replay_scene.py",
+          "status": "modified",
+          "additions": 63,
+          "deletions": 12,
+          "sha": "bb4114f177e2e2e1b87ed6f117781186af59a384",
+          "patch_sha256": "6d4f986b531c34ea3a0fdc2f49ebaa794fceb994e0678fb2a0527bf6b6316774"
+        }
+      ],
+      "additions": 93,
+      "deletions": 13,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/7",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/7/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "scripts/run_perception_eval.py",
+          "tests/unit/test_phase2_tools.py",
+          "tools/replay_scene.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "feat(v2): map overlay – lane lines and drivable area in replay outputs",
+      "number": 6,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/6",
+      "author": "cola1917",
+      "created_at": "2026-03-16T02:48:32Z",
+      "merged_at": "2026-03-16T02:53:00Z",
+      "head_sha": "5877038829f8bd62d898804cafa6c63b51881793",
+      "merge_commit_sha": "57f8a24640f53efe6dc8d0965ee3ef7d1a5583cf",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added raw nuScenes map geometry loading, viewport queries, lane/drivable-area overlays, snapshot location metadata, and replay export options.",
+      "files": [
+        {
+          "filename": "scenario/map_overlay.py",
+          "status": "added",
+          "additions": 229,
+          "deletions": 0,
+          "sha": "f2da88f7a0e191a53fda3c42cdabfb2bbed2d177",
+          "patch_sha256": "d20978cf1a83d215605905e19d9c97917a1538af6d24215a468d17ff17c5ce4a"
+        },
+        {
+          "filename": "scenario/snapshot_schema.py",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "sha": "30340f4daa451bd0eca284e9afd40759e631b11e",
+          "patch_sha256": "92e78bba6eadee234086ce09cff0e489f7a6fa8507c065939b0945f896c9c66f"
+        },
+        {
+          "filename": "scripts/run_perception_eval.py",
+          "status": "modified",
+          "additions": 28,
+          "deletions": 2,
+          "sha": "ff86691fc09f8ffcc0c572476f8ed20d4b479262",
+          "patch_sha256": "60728f8f5eeb47ecd69c1ef65119bc837176e0d53a8bbae887019d67f27b6d32"
+        },
+        {
+          "filename": "tests/unit/test_phase2_tools.py",
+          "status": "modified",
+          "additions": 111,
+          "deletions": 1,
+          "sha": "089df7c55a7f001590c8736e8c8762c2fa7755a5",
+          "patch_sha256": "9bc7008d24c25edc3601e84b68313fb820d50039bd28dc0c577bbe3a410109c8"
+        },
+        {
+          "filename": "tools/replay_scene.py",
+          "status": "modified",
+          "additions": 92,
+          "deletions": 1,
+          "sha": "75f3aec04ae42db5bc907b19f8e8bfd4843aa870",
+          "patch_sha256": "87d62869e276ed9b5fd62b2ed128da026efb04912c00b9190a325179c61ee78c"
+        }
+      ],
+      "additions": 462,
+      "deletions": 4,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/6",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/6/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "scenario/map_overlay.py",
+          "scenario/snapshot_schema.py",
+          "scripts/run_perception_eval.py",
+          "tests/unit/test_phase2_tools.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "Add scenario snapshot replay and xosc milestone",
+      "number": 5,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/5",
+      "author": "cola1917",
+      "created_at": "2026-03-16T01:56:00Z",
+      "merged_at": "2026-03-16T01:57:06Z",
+      "head_sha": "cf5e9204e16fd780b681001b4d1eecea036035e4",
+      "merge_commit_sha": "34368daf6a5b2c47d18a1762097c753bae29c970",
+      "contribution_type": [
+        "feature_enhancement"
+      ],
+      "technical_summary": "Added failure-case ranking, serialized scenario snapshots, frame replay, and initial OpenSCENARIO export with unit tests.",
+      "files": [
+        {
+          "filename": "failure_mining/__init__.py",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "sha": "1def287c1aa82e83d11ae832912a7696efc89502",
+          "patch_sha256": "28edf7c4f699cbbc05822f54a953ed602f428dbec7a49a72a01ea0ebb20c8481"
+        },
+        {
+          "filename": "failure_mining/error_aggregation.py",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0,
+          "sha": "29c75e2c9f7ecf89cc6e5d3868a67d567228d966",
+          "patch_sha256": "6b5a281c20a7083639d6330b54a534fa30941e00bc5eebfaaab47d72196a822c"
+        },
+        {
+          "filename": "failure_mining/pipeline.py",
+          "status": "added",
+          "additions": 130,
+          "deletions": 0,
+          "sha": "5bc5973a742d183048589d389e1df80c3e3b55bb",
+          "patch_sha256": "1afd5ac7d02d6695aabd31572c7d539d6504522f4acffd2e6992305b05e8d2d0"
+        },
+        {
+          "filename": "failure_mining/rank_frames.py",
+          "status": "added",
+          "additions": 189,
+          "deletions": 0,
+          "sha": "6aa663cd86d7ab4c1c5e04660e49cd51167b5f74",
+          "patch_sha256": "78fa79e2774d59cc8f18a3163812d558d52d8259a793874c77a9427f4c311976"
+        },
+        {
+          "filename": "failure_mining/rank_scenes.py",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "sha": "ec78d9d6a654bbbf81e3b54f83c87572e94ddf14",
+          "patch_sha256": "d5003ddf0b0062fe8f487712f6bd4da5df154b5cc3ce494721aff6ef0ee38c27"
+        },
+        {
+          "filename": "scenario/__init__.py",
+          "status": "added",
+          "additions": 11,
+          "deletions": 0,
+          "sha": "3e863fffed971a8d8765d05ef5e4cc137ac613f3",
+          "patch_sha256": "215628bd3aa6097ca51551af02f4c5a2dd86e6777349eb949a088998b27b7ebf"
+        },
+        {
+          "filename": "scenario/snapshot_schema.py",
+          "status": "added",
+          "additions": 152,
+          "deletions": 0,
+          "sha": "c0436cc249891a2c9784dbdf7af90e37527df1d1",
+          "patch_sha256": "87212c8ae296ee398388aef94f213b42c5eacf499f6e098ce62732afb59d207b"
+        },
+        {
+          "filename": "scripts/run_perception_eval.py",
+          "status": "modified",
+          "additions": 99,
+          "deletions": 0,
+          "sha": "2c8b469540ef299e678c4dba056fd116644eaab1",
+          "patch_sha256": "45777f088491cbfe7633aebde1421af6beefe4c01065f9b0080868221c8d4d91"
+        },
+        {
+          "filename": "simulator_export/__init__.py",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0,
+          "sha": "bff8f4eeddf453b9517b82da4a68325c6a48d185",
+          "patch_sha256": "5bd697826d1ff5b47275ee394952fbe888a2df31c58e853774223db763f95cbe"
+        },
+        {
+          "filename": "simulator_export/export_openscenario.py",
+          "status": "added",
+          "additions": 248,
+          "deletions": 0,
+          "sha": "a4682ac93d84bdc9728b049297d01a8863810ea1",
+          "patch_sha256": "35be5df8c81bfdfc5777d6401b9fddbd7b01ed52cc1ffb8de1cb7b540a4afccd"
+        },
+        {
+          "filename": "tests/unit/test_failure_mining_v1.py",
+          "status": "added",
+          "additions": 84,
+          "deletions": 0,
+          "sha": "0574b28817f7d67fb7dc0aabfb0a87f35552ade0",
+          "patch_sha256": "f78f9343ccbe5e50f885a126e33672a41fb02d579521ab5ef0e22321c984406e"
+        },
+        {
+          "filename": "tests/unit/test_phase2_tools.py",
+          "status": "added",
+          "additions": 85,
+          "deletions": 0,
+          "sha": "544ceebcf7b5461b5b69f3c056ead12641ef27a6",
+          "patch_sha256": "f3cd8d7665a6b7a19c3d10a4ed552f7bfd74346b1e09be90b2313b41adeaf688"
+        },
+        {
+          "filename": "tools/replay_scene.py",
+          "status": "added",
+          "additions": 268,
+          "deletions": 0,
+          "sha": "c630cf458ad0cd8dfa7aa558141ee4873a555e0f",
+          "patch_sha256": "0944d2264c1129e682c94a8112c94963178558ac4ce695278a167f6f73bbb4d7"
+        }
+      ],
+      "additions": 1312,
+      "deletions": 0,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/5",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/5/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          "failure_mining/__init__.py",
+          "failure_mining/error_aggregation.py",
+          "failure_mining/pipeline.py",
+          "failure_mining/rank_frames.py"
+        ]
+      }
+    },
+    {
+      "repository": "cola1917/ad-eval-suite",
+      "repository_url": "https://github.com/cola1917/ad-eval-suite",
+      "repository_fork": false,
+      "repository_parent": null,
+      "repository_category": "personal",
+      "title": "Add perception CI and golden regression checks",
+      "number": 4,
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/4",
+      "author": "cola1917",
+      "created_at": "2026-03-15T08:46:31Z",
+      "merged_at": "2026-03-15T08:53:39Z",
+      "head_sha": "aad7e867d320d4a023320194db93e08adae38ca8",
+      "merge_commit_sha": "9730afb3774262485a86841c0ecf5fc9c862299d",
+      "contribution_type": [
+        "test_enhancement"
+      ],
+      "technical_summary": "Added fast/nightly perception CI, deterministic detection/tracking fixtures, golden metrics, and a regression runner.",
+      "files": [
+        {
+          "filename": ".github/workflows/ci-fast.yml",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0,
+          "sha": "f973b465185d31b7932d502afa5b5a78e9882e78",
+          "patch_sha256": "74a9c7f0731b2523225f9a289aab55ebf239f563a986da1e9ff382ecacd13abb"
+        },
+        {
+          "filename": ".github/workflows/ci-nightly.yml",
+          "status": "added",
+          "additions": 49,
+          "deletions": 0,
+          "sha": "65ab48570af86d3b308a8bf6a19c11103d29a934",
+          "patch_sha256": "e2bdc326814629dea27c1288e8be42997ed5f80c024e7d3f8e96f6d7a2d348d2"
+        },
+        {
+          "filename": "eval/perception/regression_fixture.py",
+          "status": "added",
+          "additions": 124,
+          "deletions": 0,
+          "sha": "9bb73ab40ace921579a751b20991600f0914e54a",
+          "patch_sha256": "9f86901df023d3905399ba7978191118b43912c8e3e2606cb3ff86ef98cf4b2d"
+        },
+        {
+          "filename": "requirements.txt",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 1,
+          "sha": "3fd2e8d9ddefca49e1388c9521d11de2a6de6d78",
+          "patch_sha256": "367e5bc51c9f5dfcd9848026ec70a097f31ced962ceb67f5f3d2941e7855218c"
+        },
+        {
+          "filename": "scripts/run_perception_regression.py",
+          "status": "added",
+          "additions": 167,
+          "deletions": 0,
+          "sha": "da217bffce1fa1c3a7480a59ab1da160caadc6d7",
+          "patch_sha256": "80a4b508f8b6f958a027d0ec75b7fd35d99e724923a40acf12b4a9bad409b873"
+        },
+        {
+          "filename": "tests/conftest.py",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0,
+          "sha": "84a0f9efb0c1b8a4ce17fb0ee20f775c04098b45",
+          "patch_sha256": "2d7e0fae8f38d8b6e8aaacbbfe7459109a49a17873b352d500f053f37cbd8069"
+        },
+        {
+          "filename": "tests/golden/perception_metrics_golden.json",
+          "status": "added",
+          "additions": 28,
+          "deletions": 0,
+          "sha": "4426828a3a943f5c16f12d285f633c62651fdbf8",
+          "patch_sha256": "a60a39f1c29679452eaef809e18773c90ad174f3dbb41e39ca663cb80151469b"
+        },
+        {
+          "filename": "tests/regression/test_perception_golden.py",
+          "status": "added",
+          "additions": 68,
+          "deletions": 0,
+          "sha": "0c06b98e07367bccad8135be0a516d24f71ebeff",
+          "patch_sha256": "c2bc9e09137337c8b9d32ca394171a849fe9d69fed7ee01e4188002a5427d424"
+        },
+        {
+          "filename": "tests/unit/test_metrics_core.py",
+          "status": "added",
+          "additions": 53,
+          "deletions": 0,
+          "sha": "b3de7d1cd8d5cd68797095897a6eeaf16ad821bb",
+          "patch_sha256": "15f9cde837127f9e19a3e0a4c5c251ceb93f1ac214634d8110e32965dd468da2"
+        }
+      ],
+      "additions": 535,
+      "deletions": 1,
+      "evidence": {
+        "verification_status": "verified",
+        "author_matches": true,
+        "merged": true,
+        "public_base_repository": true,
+        "files_complete": true,
+        "summary_review_status": "diff_and_discussion_reviewed",
+        "details_api": "https://api.github.com/repos/cola1917/ad-eval-suite/pulls/4",
+        "diff_url": "https://github.com/cola1917/ad-eval-suite/pull/4/files",
+        "discussion_urls": [],
+        "reviewed_files": [
+          ".github/workflows/ci-fast.yml",
+          ".github/workflows/ci-nightly.yml",
+          "eval/perception/regression_fixture.py",
+          "requirements.txt"
+        ]
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://github.com/cola1917/FIT5120_TM11/pull/1",
+      "reason": "author_mismatch",
+      "actual_author": "Copilot"
+    },
+    {
+      "url": "https://github.com/cola1917/ad-eval-suite/pull/2",
+      "reason": "author_mismatch",
+      "actual_author": "Copilot"
+    },
+    {
+      "url": "https://github.com/cola1917/cola1917.github.io/pull/1",
+      "reason": "author_mismatch",
+      "actual_author": "Copilot"
+    },
+    {
+      "url": "https://github.com/zwan0616/FIT5120_TM11/pull/54",
+      "reason": "author_mismatch",
+      "actual_author": "Copilot"
+    }
+  ]
+}
